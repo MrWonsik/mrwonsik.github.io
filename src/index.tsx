@@ -1,6 +1,6 @@
 import React from "react";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import "./i18n";
 import Root from "./page/Root";
@@ -9,7 +9,7 @@ import AboutMe from "./page/AboutMe";
 import Resume from "./page/Resume";
 import Portfolio from "./page/Portfolio";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Root />,
