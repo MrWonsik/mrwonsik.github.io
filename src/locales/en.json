@@ -1,3 +1,8 @@
 {
-  "greeting": "Hello!"
+  "root": {
+    "greeting": "Hello!",
+    "aboutMeMenuLink": "About me",
+    "resumeMenuLink": "Resume",
+    "portfolioMenuLink": "Portfolio"
+  }
 }

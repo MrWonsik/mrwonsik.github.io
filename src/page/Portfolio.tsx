@@ -4,7 +4,7 @@ import React from "react";
 // Each project should include a brief description, screenshots, links to live demos or repositories, and any relevant technologies used.
 
 function Portfolio() {
-  return <div></div>;
+  return <div>Todo portfolio</div>;
 }
 
 export default Portfolio;

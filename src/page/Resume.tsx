@@ -7,7 +7,7 @@ import React from "react";
 //Provide a downloadable PDF version of your resume or CV for visitors to download and print if needed.
 
 function Resume() {
-  return <div></div>;
+  return <div>todo resume</div>;
 }
 
 export default Resume;

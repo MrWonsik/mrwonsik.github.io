@@ -1,3 +1,8 @@
 {
-  "greeting": "Cześć!"
+  "root": {
+    "greeting": "Cześć!",
+    "aboutMeMenuLink": "O mnie",
+    "resumeMenuLink": "CV",
+    "portfolioMenuLink": "Portfolio"
+  }
 }
