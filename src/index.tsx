@@ -1,41 +1,37 @@
 import React from "react";
 import reportWebVitals from "./reportWebVitals";
-import { createHashRouter, RouterProvider } from "react-router-dom";
 import { createRoot } from "react-dom/client";
 import "./i18n";
-import Root from "./page/Root";
-import ErrorPage from "./page/ErrorPage";
-import AboutMe from "./page/AboutMe";
-import Resume from "./page/Resume";
-import Portfolio from "./page/Portfolio";
+import App from "./App";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "about",
-        element: <AboutMe />,
-      },
-      {
-        path: "resume",
-        element: <Resume />,
-      },
-      {
-        path: "portfolio",
-        element: <Portfolio />,
-      },
-    ],
-  },
-]);
+const theme = {
+  mainColor: "#F5F4EF",
+  textColor: "#53524E",
+  buttonColor: "#DEDBD1",
+  accentColor: "#C8BB9e",
+};
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: ${(props) => props.theme.textColor};
+    font-size: 20px;
+    margin: 0;
+    background: ${(props) => props.theme.mainColor};
+  }
+`;
 
 const root = document.getElementById("root");
 if (root) {
   createRoot(root).render(
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <App />
+      </ThemeProvider>
     </React.StrictMode>,
   );
 }
