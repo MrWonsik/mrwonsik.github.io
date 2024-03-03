@@ -6,15 +6,10 @@ import { SectionDefinition } from "../types";
 const NavigationCardContainer = styled.nav`
   text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  border-top: ${(props) => `1px ${props.theme.accentColor} solid`};
-  border-bottom: ${(props) => `1px ${props.theme.accentColor} solid`};
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 10px;
+  font-size: 25px;
 `;
 
 const NavigationLinkContainer = styled.div`
@@ -25,7 +20,7 @@ const NavigationLink = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.textColor};
   &:hover {
-    color: red;
+    filter: brightness(10);
   }
 `;
 

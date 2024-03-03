@@ -70,6 +70,7 @@ function App() {
   return (
     <AppRoot>
       <AppContainer>
+        <NavigationCard sectionsList={sections} />
         <MainContainerContainer>
           <Column>
             {sections.map((section) => (
@@ -84,7 +85,6 @@ function App() {
           <div>
             <FixedColumn>
               <PersonalCard />
-              <NavigationCard sectionsList={sections} />
             </FixedColumn>
           </div>
         </MainContainerContainer>

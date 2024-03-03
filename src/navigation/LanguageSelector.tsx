@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import i18n from "i18next";
 import styled from "styled-components";
+
+const LanguageSelectorContainer = styled.div``;
 
 const FlagSvg = styled.svg`
   width: 30px;
@@ -62,12 +64,8 @@ function LanguageSelector() {
     i18n.changeLanguage(language);
   };
 
-  console.log(i18n.language);
-  console.log(i18n.language === "pl");
-  console.log(i18n.language === "en");
-
   return (
-    <div>
+    <LanguageSelectorContainer>
       <LanguageButton
         onClick={() => changeLanguage("pl")}
         selected={i18n.language === "pl"}
@@ -80,7 +78,7 @@ function LanguageSelector() {
       >
         <EngFlagSvg />
       </LanguageButton>
-    </div>
+    </LanguageSelectorContainer>
   );
 }
 

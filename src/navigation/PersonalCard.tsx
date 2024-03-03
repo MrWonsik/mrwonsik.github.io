@@ -3,21 +3,22 @@ import styled from "styled-components";
 import SocialLinks from "./SocialLinks";
 
 const PersonalCardContainer = styled.div`
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  font-size: 30px;
 `;
 
 const AvatarContainer = styled.div`
-  border-radius: 10px;
-  overflow: hidden;
   margin: 10px;
 `;
 
 const Avatar = styled.img`
-  width: 150px;
-  height: 150px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
 `;
 
 const Field = styled.p`

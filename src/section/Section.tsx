@@ -12,13 +12,16 @@ const SectionContainer = styled.section`
   margin: 10px;
 `;
 
+const SectionHeader = styled.h2`
+  font-size: 60px;
+  margin-left: 20px;
+`;
+
 function Section(props: SectionProps) {
   return (
     <SectionContainer id={props.id} className={"sectionContainer"}>
-      <div className={"sectionHeader"}>
-        <h2>{props.header}</h2>
-        {props.component}
-      </div>
+      <SectionHeader>{props.header}</SectionHeader>
+      {props.component}
     </SectionContainer>
   );
 }
