@@ -6,7 +6,7 @@ import React from "react";
 // This page can include sections such as Work Experience, Education, Skills, Certifications, Projects, and Awards.
 //Provide a downloadable PDF version of your resume or CV for visitors to download and print if needed.
 
-function Resume() {
+function Technologies() {
   return (
     <div>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -45,4 +45,4 @@ function Resume() {
   );
 }
 
-export default Resume;
+export default Technologies;
