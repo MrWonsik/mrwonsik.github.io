@@ -8,7 +8,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 const theme = {
   mainColor: "#fcfdff",
   textColor: "#000b2a",
-  accentColor: "#0009ff",
+  accentColor: "#012075",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -17,9 +17,13 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-style: normal;
     color: ${(props) => props.theme.textColor};
-    font-size: 20px;
+    font-size: 30px;
     margin: 0;
     background: ${(props) => props.theme.mainColor};
+  }
+  
+  html {
+    scroll-behavior: smooth;
   }
 `;
 

@@ -15,8 +15,9 @@ const SocialSvg = styled.svg`
   & path {
     fill: ${(props) => props.theme.textColor};
   }
-  &:hover {
-    filter: brightness(10);
+  &:hover,
+  &:hover path {
+    fill: ${(props) => props.theme.accentColor};
   }
 `;
 

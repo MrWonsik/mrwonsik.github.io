@@ -23,21 +23,16 @@ const AppContainer = styled.div`
   margin: auto;
 `;
 
+const NavigationContainer = styled.div`
+  max-width: 1024px;
+  position: sticky;
+  top: 0;
+  background: ${(props) => props.theme.mainColor};
+`;
+
 const MainContainerContainer = styled.div`
   display: flex;
-  flex-direction: row;
-  gap: 30px;
-`;
-
-const Column = styled.div`
-  display: flex;
   flex-direction: column;
-`;
-
-const FixedColumn = styled(Column)`
-  position: sticky;
-  top: 20px;
-  right: 0;
   gap: 30px;
 `;
 
@@ -70,23 +65,19 @@ function App() {
   return (
     <AppRoot>
       <AppContainer>
-        <NavigationCard sectionsList={sections} />
+        <NavigationContainer>
+          <NavigationCard sectionsList={sections} />
+        </NavigationContainer>
         <MainContainerContainer>
-          <Column>
-            {sections.map((section) => (
-              <Section
-                key={section.id}
-                id={section.id}
-                header={section.header}
-                component={section.component}
-              />
-            ))}
-          </Column>
-          <div>
-            <FixedColumn>
-              <PersonalCard />
-            </FixedColumn>
-          </div>
+          <PersonalCard />
+          {sections.map((section) => (
+            <Section
+              key={section.id}
+              id={section.id}
+              header={section.header}
+              component={section.component}
+            />
+          ))}
         </MainContainerContainer>
       </AppContainer>
     </AppRoot>

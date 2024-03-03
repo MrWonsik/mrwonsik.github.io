@@ -10,6 +10,7 @@ const NavigationCardContainer = styled.nav`
   justify-content: space-around;
   align-items: center;
   font-size: 25px;
+  background: ${(props) => props.theme.mainColor};
 `;
 
 const NavigationLinkContainer = styled.div`
@@ -20,7 +21,7 @@ const NavigationLink = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.textColor};
   &:hover {
-    filter: brightness(10);
+    color: ${(props) => props.theme.accentColor};
   }
 `;
 

@@ -5,8 +5,9 @@ import SocialLinks from "./SocialLinks";
 const PersonalCardContainer = styled.div`
   margin-top: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
   font-size: 30px;
 `;
@@ -16,9 +17,15 @@ const AvatarContainer = styled.div`
 `;
 
 const Avatar = styled.img`
-  width: 250px;
-  height: 250px;
-  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  border-radius: 200px;
+  border: ${(props) => `10px solid ${props.theme.textColor}`};
+`;
+
+const FieldsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const Field = styled.p`
@@ -35,9 +42,11 @@ function PersonalCard() {
       <AvatarContainer>
         <Avatar src="/img/avatar.jpg" />
       </AvatarContainer>
-      <Field>Tomasz Wąsacz</Field>
-      <FieldJobRole>Software Engineer</FieldJobRole>
-      <SocialLinks />
+      <FieldsContainer>
+        <Field>Tomasz Wąsacz</Field>
+        <FieldJobRole>Software Engineer</FieldJobRole>
+        <SocialLinks />
+      </FieldsContainer>
     </PersonalCardContainer>
   );
 }
