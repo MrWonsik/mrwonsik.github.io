@@ -6,10 +6,10 @@ import App from "./App";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 
 const theme = {
-  mainColor: "#F5F4EF",
-  textColor: "#53524E",
-  buttonColor: "#DEDBD1",
-  accentColor: "#C8BB9e",
+  mainColor: "#E2E8DD",
+  textColor: "#4E5340",
+  buttonColor: "#697268",
+  accentColor: "#B7D1DA",
 };
 
 const GlobalStyle = createGlobalStyle`

@@ -1,8 +1,9 @@
 {
   "app": {
     "greeting": "Cześć!",
-    "aboutMeMenuLink": "O mnie",
-    "resumeMenuLink": "CV",
-    "portfolioMenuLink": "Portfolio"
+    "aboutMeHeader": "O mnie",
+    "technologiesHeader": "Technologie",
+    "employmentHistoryHeader": "Historia zatrudnienia",
+    "portfolioHeader": "Portfolio"
   }
 }

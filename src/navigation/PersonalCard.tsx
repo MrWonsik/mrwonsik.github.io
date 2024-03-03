@@ -1,50 +1,42 @@
 import React from "react";
 import styled from "styled-components";
-import LanguageSelector from "./LanguageSelector";
+import SocialLinks from "./SocialLinks";
 
 const PersonalCardContainer = styled.div`
-  padding: 20px;
-  background: ${(props) => props.theme.accentColor};
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
 `;
 
-const AvatarContainer = styled.div``;
+const AvatarContainer = styled.div`
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+`;
 
-const Avatar = styled.img``;
+const Avatar = styled.img`
+  width: 150px;
+  height: 150px;
+`;
 
-const Field = styled.p``;
+const Field = styled.p`
+  margin: 5px;
+`;
 
-const SocialLink = () => {
-  const SocialLinkContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-  `;
-
-  const Social = styled.span`
-    padding: 10px;
-  `;
-
-  return (
-    <SocialLinkContainer>
-      <Social>LinkedIn</Social>
-      <Social>GitHub</Social>
-    </SocialLinkContainer>
-  );
-};
+const FieldJobRole = styled(Field)`
+  font-weight: 700;
+`;
 
 function PersonalCard() {
   return (
     <PersonalCardContainer>
-      <LanguageSelector />
       <AvatarContainer>
-        <Avatar src={"obrazek.jpg"} />
+        <Avatar src="/img/avatar.jpg" />
       </AvatarContainer>
       <Field>Tomasz Wąsacz</Field>
-      <Field>Software Enginner</Field>
-      <SocialLink />
+      <FieldJobRole>Software Engineer</FieldJobRole>
+      <SocialLinks />
     </PersonalCardContainer>
   );
 }

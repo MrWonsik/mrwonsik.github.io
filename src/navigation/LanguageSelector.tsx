@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import i18n from "i18next";
 import styled from "styled-components";
 
 const FlagSvg = styled.svg`
   width: 30px;
   height: 30px;
-  border-radius: 15px;
+`;
+
+const LanguageButton = styled.button<{ selected: boolean }>`
+  background: none;
+  border: none;
+  padding: 10px;
+  filter: ${(props) => (props.selected ? "none" : "grayscale(1)")};
+  &:hover {
+    cursor: pointer;
+    filter: brightness(1);
+  }
 `;
 
 const PlFlagSvg = () => (
@@ -48,14 +58,28 @@ const EngFlagSvg = () => (
 );
 
 function LanguageSelector() {
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language);
+  };
+
+  console.log(i18n.language);
+  console.log(i18n.language === "pl");
+  console.log(i18n.language === "en");
+
   return (
     <div>
-      <button onClick={() => i18n.changeLanguage("pl")}>
+      <LanguageButton
+        onClick={() => changeLanguage("pl")}
+        selected={i18n.language === "pl"}
+      >
         <PlFlagSvg />
-      </button>
-      <button onClick={() => i18n.changeLanguage("en")}>
+      </LanguageButton>
+      <LanguageButton
+        onClick={() => changeLanguage("en")}
+        selected={i18n.language === "en"}
+      >
         <EngFlagSvg />
-      </button>
+      </LanguageButton>
     </div>
   );
 }

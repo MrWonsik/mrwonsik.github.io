@@ -1,12 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Section from "./component/Section";
+import Section from "./section/Section";
 import AboutMe from "./section/AboutMe";
 import Portfolio from "./section/Portfolio";
-import Resume from "./section/Resume";
-import LanguageSelector from "./component/LanguageSelector";
-import PersonalCard from "./component/PersonalCard";
+import Technologies from "./section/Technologies";
+import PersonalCard from "./navigation/PersonalCard";
 import styled from "styled-components";
+import NavigationCard from "./navigation/NavigationCard";
+import { SectionDefinition } from "./types";
+import EmploymentHistory from "./section/EmploymentHistory";
 
 //A contact page with your contact information, including email address, phone number, LinkedIn profile, GitHub profile, or other social media profiles.
 //You can also include a contact form for visitors to send you messages directly from your website.
@@ -21,61 +23,70 @@ const AppContainer = styled.div`
   margin: auto;
 `;
 
-const HeaderRoot = styled.div`
-  background: ${(props) => props.theme.mainColor};
-  position: sticky;
-  top: 0;
-`;
-
-const HeaderContainer = styled.nav`
-  max-width: 1024px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: end;
-`;
-
-const NavigationLink = styled.a`
-  padding: 20px;
-  text-decoration: none;
-  color: ${(props) => props.theme.textColor};
-`;
-
 const MainContainerContainer = styled.div`
   display: flex;
   flex-direction: row;
+  gap: 30px;
+`;
+
+const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const FixedColumn = styled(Column)`
+  position: sticky;
+  top: 20px;
+  right: 0;
+  gap: 30px;
 `;
 
 function App() {
   const { t } = useTranslation();
+
+  const sections: Array<SectionDefinition> = [
+    {
+      id: "about",
+      header: t("app.aboutMeHeader"),
+      component: <AboutMe />,
+    },
+    {
+      id: "technologies",
+      header: t("app.technologiesHeader"),
+      component: <Technologies />,
+    },
+    {
+      id: "employment-history",
+      header: t("app.employmentHistoryHeader"),
+      component: <EmploymentHistory />,
+    },
+    {
+      id: "portfolio",
+      header: t("app.portfolioHeader"),
+      component: <Portfolio />,
+    },
+  ];
+
   return (
     <AppRoot>
       <AppContainer>
-        <HeaderRoot>
-          <HeaderContainer>
-            <NavigationLink href={"#about"}>
-              {t("app.aboutMeMenuLink")}
-            </NavigationLink>
-            <NavigationLink href={"#resume"}>
-              {t("app.resumeMenuLink")}
-            </NavigationLink>
-            <NavigationLink href={"#portfolio"}>
-              {t("app.portfolioMenuLink")}
-            </NavigationLink>
-            <LanguageSelector />
-          </HeaderContainer>
-        </HeaderRoot>
         <MainContainerContainer>
-          <div className={"sectionsContainer"}>
-            <Section id={"about"} header={"About Me"} component={<AboutMe />} />
-            <Section id={"resume"} header={"Resume"} component={<Resume />} />
-            <Section
-              id={"portfolio"}
-              header={"Portfolio"}
-              component={<Portfolio />}
-            />
+          <Column>
+            {sections.map((section) => (
+              <Section
+                key={section.id}
+                id={section.id}
+                header={section.header}
+                component={section.component}
+              />
+            ))}
+          </Column>
+          <div>
+            <FixedColumn>
+              <PersonalCard />
+              <NavigationCard sectionsList={sections} />
+            </FixedColumn>
           </div>
-          <PersonalCard />
         </MainContainerContainer>
       </AppContainer>
     </AppRoot>

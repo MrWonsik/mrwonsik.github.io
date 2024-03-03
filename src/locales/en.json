@@ -1,8 +1,9 @@
 {
   "app": {
     "greeting": "Hello!",
-    "aboutMeMenuLink": "About me",
-    "resumeMenuLink": "Resume",
-    "portfolioMenuLink": "Portfolio"
+    "aboutMeHeader": "About me",
+    "technologiesHeader": "Technologies",
+    "employmentHistoryHeader": "Employment history",
+    "portfolioHeader": "Portfolio"
   }
 }
