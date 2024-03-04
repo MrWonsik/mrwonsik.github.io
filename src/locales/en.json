@@ -1,6 +1,6 @@
 {
   "app": {
-    "greeting": "Hello!",
+    "fieldJobRole": "Software Engineer",
     "aboutMeHeader": "About me",
     "skillsHeader": "Skills",
     "employmentHistoryHeader": "Employment history",

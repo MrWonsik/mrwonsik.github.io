@@ -1,6 +1,6 @@
 {
   "app": {
-    "greeting": "Cześć!",
+    "fieldJobRole": "Inżynier Oprogramowania",
     "aboutMeHeader": "O mnie",
     "skillsHeader": "Umiejętności",
     "employmentHistoryHeader": "Historia zatrudnienia",

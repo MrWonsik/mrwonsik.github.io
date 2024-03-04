@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SocialLinks from "./SocialLinks";
+import { useTranslation } from "react-i18next";
 
 const PersonalCardContainer = styled.div`
   margin-top: 50px;
@@ -39,6 +40,8 @@ const FieldJobRole = styled(Field)`
 `;
 
 function PersonalCard() {
+  const { t } = useTranslation();
+
   return (
     <PersonalCardContainer>
       <AvatarContainer>
@@ -46,7 +49,7 @@ function PersonalCard() {
       </AvatarContainer>
       <FieldsContainer>
         <Field>Tomasz Wąsacz</Field>
-        <FieldJobRole>Software Engineer</FieldJobRole>
+        <FieldJobRole>{t("app.fieldJobRole")}</FieldJobRole>
         <SocialLinks />
       </FieldsContainer>
     </PersonalCardContainer>
