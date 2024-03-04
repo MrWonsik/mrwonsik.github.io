@@ -2,8 +2,19 @@
   "app": {
     "greeting": "Hello!",
     "aboutMeHeader": "About me",
-    "technologiesHeader": "Technologies",
+    "skillsHeader": "Skills",
     "employmentHistoryHeader": "Employment history",
+    "educationHeader": "Education",
     "portfolioHeader": "Portfolio"
+  },
+  "aboutMe": {
+    "firstParagraph": "I am a software engineer, professionally involved in the field since 2020. My expertise lies in languages such as Java (leveraging the Spring framework) and JavaScript/TypeScript (employing the React framework). I am committed to the meticulous craft of clean code and the rigorous application of best programming practices.",
+    "secondParagraph": "Throughout my career, I have cultivated a profound appreciation for the art of programming and remain dedicated to advancing my skills in delivering robust and elegant software solutions."
+  },
+  "skills": {
+    "technologiesSubheader": "Technologies",
+    "toolsSubheader": "Tools",
+    "skillsSubheader": "Other",
+    "certificationsSubheader": "Tranings and courses"
   }
 }

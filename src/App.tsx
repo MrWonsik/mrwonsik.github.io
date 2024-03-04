@@ -3,12 +3,18 @@ import { useTranslation } from "react-i18next";
 import Section from "./section/Section";
 import AboutMe from "./section/AboutMe";
 import Portfolio from "./section/Portfolio";
-import Technologies from "./section/Technologies";
+import Skills from "./section/Skills";
 import PersonalCard from "./navigation/PersonalCard";
 import styled from "styled-components";
-import NavigationCard from "./navigation/NavigationCard";
+import Navigation from "./navigation/Navigation";
 import { SectionDefinition } from "./types";
 import EmploymentHistory from "./section/EmploymentHistory";
+import Education from "./section/Education";
+import { IoIosPerson } from "react-icons/io";
+import { IoBookSharp } from "react-icons/io5";
+import { BsBuildingsFill } from "react-icons/bs";
+import { GiGraduateCap } from "react-icons/gi";
+import { IoBrush } from "react-icons/io5";
 
 //A contact page with your contact information, including email address, phone number, LinkedIn profile, GitHub profile, or other social media profiles.
 //You can also include a contact form for visitors to send you messages directly from your website.
@@ -19,7 +25,6 @@ const AppRoot = styled.div`
 
 const AppContainer = styled.div`
   max-width: 1024px;
-  padding: 20px;
   margin: auto;
 `;
 
@@ -34,6 +39,7 @@ const MainContainerContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
+  padding: 20px;
 `;
 
 function App() {
@@ -44,21 +50,31 @@ function App() {
       id: "about",
       header: t("app.aboutMeHeader"),
       component: <AboutMe />,
+      icon: <IoIosPerson />,
     },
     {
-      id: "technologies",
-      header: t("app.technologiesHeader"),
-      component: <Technologies />,
+      id: "skills",
+      header: t("app.skillsHeader"),
+      component: <Skills />,
+      icon: <IoBookSharp />,
     },
     {
       id: "employment-history",
       header: t("app.employmentHistoryHeader"),
       component: <EmploymentHistory />,
+      icon: <BsBuildingsFill />,
+    },
+    {
+      id: "education",
+      header: t("app.educationHeader"),
+      component: <Education />,
+      icon: <GiGraduateCap />,
     },
     {
       id: "portfolio",
       header: t("app.portfolioHeader"),
       component: <Portfolio />,
+      icon: <IoBrush />,
     },
   ];
 
@@ -66,7 +82,7 @@ function App() {
     <AppRoot>
       <AppContainer>
         <NavigationContainer>
-          <NavigationCard sectionsList={sections} />
+          <Navigation sectionsList={sections} />
         </NavigationContainer>
         <MainContainerContainer>
           <PersonalCard />
@@ -76,6 +92,7 @@ function App() {
               id={section.id}
               header={section.header}
               component={section.component}
+              mobileIcon={section.icon}
             />
           ))}
         </MainContainerContainer>

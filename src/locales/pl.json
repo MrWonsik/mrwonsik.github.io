@@ -2,8 +2,19 @@
   "app": {
     "greeting": "Cześć!",
     "aboutMeHeader": "O mnie",
-    "technologiesHeader": "Technologie",
+    "skillsHeader": "Umiejętności",
     "employmentHistoryHeader": "Historia zatrudnienia",
+    "educationHeader": "Edukacja",
     "portfolioHeader": "Portfolio"
+  },
+  "aboutMe": {
+    "firstParagraph": "Jestem inżynierem oprogramowania, zawodowo zajmuję się tym od 2020 roku. Specjalizuję się w takich językach jak Java (z wykorzystaniem frameworka Spring) oraz JavaScript/TypeScript (z wykorzystaniem frameworka React). Moją pasją jest tworzenie czystego kodu i przestrzeganie najlepszych praktyk programistycznych.",
+    "secondParagraph": "W trakcie mojej pracy, odkryłem prawdziwą pasję do programowania i staram się doskonalić moje umiejętności by tworzyć dopasowane do oczekiwań rozwiązania."
+  },
+  "skills": {
+    "technologiesSubheader": "Technologie",
+    "toolsSubheader": "Narzędzia",
+    "skillsSubheader": "Inne",
+    "certificationsSubheader": "Szkolenia i kursy"
   }
 }

@@ -5,17 +5,19 @@ interface SectionProps {
   id: string;
   header: string;
   component: JSX.Element;
+  mobileIcon: JSX.Element;
 }
 
 const SectionContainer = styled.section`
   padding: 20px;
   margin: 10px;
+  justify-content: center;
 `;
 
 const SectionHeader = styled.h2`
   font-size: 60px;
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-top: 30px;
+  text-align: center;
 `;
 
 function Section(props: SectionProps) {

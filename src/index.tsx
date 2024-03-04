@@ -8,7 +8,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 const theme = {
   mainColor: "#fcfdff",
   textColor: "#000b2a",
-  accentColor: "#012075",
+  accentColor: "#0134bd",
 };
 
 const GlobalStyle = createGlobalStyle`

@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import LanguageSelector from "./LanguageSelector";
 import { SectionDefinition } from "../types";
+import { device } from "../const";
 
-const NavigationCardContainer = styled.nav`
+const NavigationContainer = styled.nav`
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -25,23 +26,44 @@ const NavigationLink = styled.a`
   }
 `;
 
+const NavigationIcon = styled.span`
+  display: none;
+
+  @media ${device.mobile} {
+    display: block;
+  }
+`;
+
+const NavigationLabel = styled.span`
+  display: block;
+
+  @media ${device.mobile} {
+    display: none;
+  }
+
+  &:hover {
+    color: ${(props) => props.theme.accentColor};
+  }
+`;
+
 interface NavigationCardProps {
   sectionsList: Array<SectionDefinition>;
 }
 
-function NavigationCard(props: NavigationCardProps) {
+function Navigation(props: NavigationCardProps) {
   return (
-    <NavigationCardContainer>
+    <NavigationContainer>
       {props.sectionsList.map((section) => (
         <NavigationLinkContainer key={section.id}>
           <NavigationLink href={`#${section.id}`}>
-            {section.header}
+            <NavigationIcon>{section.icon}</NavigationIcon>
+            <NavigationLabel>{section.header}</NavigationLabel>
           </NavigationLink>
         </NavigationLinkContainer>
       ))}
       <LanguageSelector />
-    </NavigationCardContainer>
+    </NavigationContainer>
   );
 }
 
-export default NavigationCard;
+export default Navigation;

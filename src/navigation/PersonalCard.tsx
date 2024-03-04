@@ -14,12 +14,14 @@ const PersonalCardContainer = styled.div`
 
 const AvatarContainer = styled.div`
   margin: 10px;
+  max-width: 350px;
+  max-height: 350px;
 `;
 
 const Avatar = styled.img`
-  width: 350px;
-  height: 350px;
-  border-radius: 200px;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
   border: ${(props) => `10px solid ${props.theme.textColor}`};
 `;
 
