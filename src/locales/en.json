@@ -12,9 +12,33 @@
     "secondParagraph": "Throughout my career, I have cultivated a profound appreciation for the art of programming and remain dedicated to advancing my skills in delivering robust and elegant software solutions."
   },
   "skills": {
-    "technologiesSubheader": "Technologies",
+    "strengthsSubheader": "Strengths",
+    "certificationsSubheader": "Tranings and courses",
+    "backendTechnologiesSubheader": "Backend",
+    "frontendTechnologiesSubheader": "Frontend",
+    "databaseTechnologiesSubheader": "Databases",
     "toolsSubheader": "Tools",
-    "skillsSubheader": "Other",
-    "certificationsSubheader": "Tranings and courses"
+    "strengths": {
+      "webApplicationDeveloper": {
+        "header": "Web Application Developer",
+        "description": "I develop web applications, integrating frontend and backend. I design user interfaces and implement business logic, ensuring interactivity and responsiveness."
+      },
+      "qualityDrivenDeveloper": {
+        "header": "Quality-Driven Developer",
+        "description": "I write clear, understandable, and elegant code, following the best programming practices. I focus on modularity and readability."
+      },
+      "cleanCodePractitioner": {
+        "header": "Clean Code Practitioner",
+        "description": "I write clear, understandable, and elegant code, following the best programming practices. I focus on modularity and readability, applying practices such as SOLID, KISS, DRY, YAGNI, etc."
+      },
+      "refactoringNinja": {
+        "header": "Refactoring Ninja",
+        "description": "I specialize in improving existing code, removing unnecessary elements, and optimizing its structure, ensuring readability and performance."
+      },
+      "architectureEnthusiast": {
+        "header": "Architecture Enthusiast",
+        "description": "I'm passionate about the architecture of information systems. I strive to delve into the secrets of software design and create scalable, efficient, and flexible systems."
+      }
+    }
   }
 }

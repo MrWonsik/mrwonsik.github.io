@@ -10,7 +10,6 @@ function AboutMe() {
   return (
     <div>
       <JustifiedParagraph>{t("aboutMe.firstParagraph")}</JustifiedParagraph>
-      <JustifiedParagraph>{t("aboutMe.secondParagraph")}</JustifiedParagraph>
     </div>
   );
 }

@@ -1,9 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import BackendTechnologies from "../skills/BackendTechnologies";
+import FrontendTechnologies from "../skills/FrontendTechnologies";
+import DatabaseTechnologies from "../skills/DatabaseTechnologies";
+import Tools from "../skills/Tools";
+import Strengths from "../skills/Strengths";
+
+const SkillsContainer = styled.div``;
 
 const SubsectionContainer = styled.div`
-  margin: 50px 0;
+  margin: 80px 0;
 `;
 
 const SubsectionHeader = styled.h3`
@@ -12,54 +19,58 @@ const SubsectionHeader = styled.h3`
   text-align: center;
 `;
 
-const TechnologiesContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: wrap;
-`;
-
-const TechnologySvg = styled.img`
-  max-width: 100px;
-  max-height: 100px;
-  padding: 10px;
-`;
-
-const Technologies = () => {
-  return (
-    <TechnologiesContainer>
-      <TechnologySvg src="/img/tech-svg/java.svg" />
-      <TechnologySvg src="/img/tech-svg/spring.svg" />
-      <TechnologySvg src="/img/tech-svg/html.svg" />
-      <TechnologySvg src="/img/tech-svg/css.svg" />
-      <TechnologySvg src="/img/tech-svg/js.svg" />
-      <TechnologySvg src="/img/tech-svg/ts.svg" />
-      <TechnologySvg src="/img/tech-svg/react.svg" />
-    </TechnologiesContainer>
-  );
-};
+interface SkillsSubsection {
+  key: string;
+  header?: string;
+  component: JSX.Element;
+}
 
 function Skills() {
   const { t } = useTranslation();
 
+  const skillsSubsection: Array<SkillsSubsection> = [
+    {
+      key: "strengths",
+      component: <Strengths />,
+    },
+    {
+      key: "certifications",
+      header: t("skills.certificationsSubheader"),
+      component: <></>,
+    },
+    {
+      key: "backend",
+      header: t("skills.backendTechnologiesSubheader"),
+      component: <BackendTechnologies />,
+    },
+    {
+      key: "frontend",
+      header: t("skills.frontendTechnologiesSubheader"),
+      component: <FrontendTechnologies />,
+    },
+    {
+      key: "databases",
+      header: t("skills.databaseTechnologiesSubheader"),
+      component: <DatabaseTechnologies />,
+    },
+    {
+      key: "tools",
+      header: t("skills.toolsSubheader"),
+      component: <Tools />,
+    },
+  ];
+
   return (
-    <div>
-      <SubsectionContainer>
-        <SubsectionHeader>{t("skills.technologiesSubheader")}</SubsectionHeader>
-        <Technologies />
-      </SubsectionContainer>
-      <SubsectionContainer>
-        <SubsectionHeader>{t("skills.toolsSubheader")}</SubsectionHeader>
-      </SubsectionContainer>
-      <SubsectionContainer>
-        <SubsectionHeader>{t("skills.skillsSubheader")}</SubsectionHeader>
-      </SubsectionContainer>
-      <SubsectionContainer>
-        <SubsectionHeader>
-          {t("skills.certificationsSubheader")}
-        </SubsectionHeader>
-      </SubsectionContainer>
-    </div>
+    <SkillsContainer>
+      {skillsSubsection.map((skillSubsection) => (
+        <SubsectionContainer key={skillSubsection.key}>
+          {skillSubsection.header && (
+            <SubsectionHeader>{skillSubsection.header}</SubsectionHeader>
+          )}
+          {skillSubsection.component}
+        </SubsectionContainer>
+      ))}
+    </SkillsContainer>
   );
 }
 

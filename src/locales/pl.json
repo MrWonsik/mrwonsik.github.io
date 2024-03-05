@@ -12,9 +12,33 @@
     "secondParagraph": "W trakcie mojej pracy, odkryłem prawdziwą pasję do programowania i staram się doskonalić moje umiejętności by tworzyć dopasowane do oczekiwań rozwiązania."
   },
   "skills": {
-    "technologiesSubheader": "Technologie",
+    "strengthsSubheader": "Mocne strony",
+    "certificationsSubheader": "Szkolenia i kursy",
+    "backendTechnologiesSubheader": "Backend",
+    "frontendTechnologiesSubheader": "Frontend",
+    "databaseTechnologiesSubheader": "Bazy danych",
     "toolsSubheader": "Narzędzia",
-    "skillsSubheader": "Inne",
-    "certificationsSubheader": "Szkolenia i kursy"
+    "strengths": {
+      "webApplicationDeveloper": {
+        "header": "Programista aplikacji webowych",
+        "description": "Tworzę aplikacje internetowe, łącząc frontend i backend. Projektuję interfejsy użytkownika i implementuję logikę biznesową, dbając o interaktywność i responsywność."
+      },
+      "qualityDrivenDeveloper": {
+        "header": "Programista dbający o jakość",
+        "description": "Regularnie piszę testy jednostkowe oraz integracyjne, aby zapewnić wysoką jakość kodu i ograniczać liczbę powstających błędów. Dzięki temu podejściu, aplikacje przy których pracuje są niezawodne i łatwiejsze w utrzymaniu."
+      },
+      "cleanCodePractitioner": {
+        "header": "Fan czystego kodu",
+        "description": "Piszę czytelny, zrozumiały i elegancki kod, stosując najlepsze praktyki programistyczne. Dbam o modularność i czytelność kodu, stosując praktyki: SOLID, KISS, DRY, YAGNI itp."
+      },
+      "refactoringNinja": {
+        "header": "Ninja Refaktoru",
+        "description": "Specjalizuję się w poprawianiu istniejącego kodu, usuwaniu zbędnych elementów i optymalizacji struktury, zapewniając jego czytelność i wydajność. Nie lubię zostawiać wybitych okien"
+      },
+      "architectureEnthusiast": {
+        "header": "Entuzjasta Architektury",
+        "description": "Jestem pasjonatem architektury systemów informatycznych, chcę zgłębiać tajniki projektowania oprogramowania i tworzyć skalowalne, wydajne i elastyczne systemy."
+      }
+    }
   }
 }
