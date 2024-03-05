@@ -8,7 +8,7 @@ export const SvgContainer = styled.div`
 `;
 
 export const Svg = styled.img`
-  max-width: 250px;
+  max-width: 180px;
   max-height: 100px;
   padding: 10px;
 `;
