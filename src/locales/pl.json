@@ -5,7 +5,22 @@
     "skillsHeader": "Umiejętności",
     "employmentHistoryHeader": "Historia zatrudnienia",
     "educationHeader": "Edukacja",
-    "portfolioHeader": "Portfolio"
+    "portfolioHeader": "Portfolio",
+    "pageTitle": "Tomasz Wąsacz - Inżynier Oprogramowania"
+  },
+  "month": {
+    "jan": "Styczeń",
+    "feb": "Luty",
+    "mar": "Marzec",
+    "apr": "Kwiecień",
+    "may": "Maj",
+    "jun": "Czerwiec",
+    "jul": "Lipiec",
+    "aug": "Sierpień",
+    "sep": "Wrzesień",
+    "oct": "Październik",
+    "nov": "Listopad",
+    "dec": "Grudzień"
   },
   "aboutMe": {
     "firstParagraph": "Jestem inżynierem oprogramowania, zawodowo zajmuję się tym od 2020 roku. Specjalizuję się w takich językach jak Java (z wykorzystaniem frameworka Spring) oraz JavaScript/TypeScript (z wykorzystaniem frameworka React). Moją pasją jest tworzenie czystego kodu i przestrzeganie najlepszych praktyk programistycznych.",
@@ -13,11 +28,8 @@
   },
   "skills": {
     "strengthsSubheader": "Mocne strony",
-    "certificationsSubheader": "Szkolenia i kursy",
-    "backendTechnologiesSubheader": "Backend",
-    "frontendTechnologiesSubheader": "Frontend",
-    "databaseTechnologiesSubheader": "Bazy danych",
-    "toolsSubheader": "Narzędzia",
+    "certificationsSubheader": "Odbyte szkolenia",
+    "technologiesSubheader": "Poznane technologie",
     "strengths": {
       "webApplicationDeveloper": {
         "header": "Programista aplikacji webowych",
@@ -40,5 +52,11 @@
         "description": "Jestem pasjonatem architektury systemów informatycznych, chcę zgłębiać tajniki projektowania oprogramowania i tworzyć skalowalne, wydajne i elastyczne systemy."
       }
     }
+  },
+  "courses": {
+    "courseNameLabel": "Szkolenie",
+    "authorNameLabel": "Autor/Autorzy",
+    "platformNameLabel": "Platforma",
+    "dateOfCompletionLabel": "Data ukończenia"
   }
 }

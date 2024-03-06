@@ -5,6 +5,7 @@ export const SvgContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-flow: wrap;
+  padding: 25px 0;
 `;
 
 export const Svg = styled.img`

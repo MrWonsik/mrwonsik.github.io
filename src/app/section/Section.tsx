@@ -18,6 +18,7 @@ const SectionHeader = styled.h2`
   font-size: 60px;
   margin-top: 30px;
   text-align: center;
+  text-transform: uppercase;
 `;
 
 function Section(props: SectionProps) {

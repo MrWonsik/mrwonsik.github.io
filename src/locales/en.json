@@ -5,7 +5,22 @@
     "skillsHeader": "Skills",
     "employmentHistoryHeader": "Employment history",
     "educationHeader": "Education",
-    "portfolioHeader": "Portfolio"
+    "portfolioHeader": "Portfolio",
+    "pageTitle": "Tomasz Wąsacz - Software Engineer"
+  },
+  "month": {
+    "jan": "January",
+    "feb": "February",
+    "mar": "March",
+    "apr": "April",
+    "may": "May",
+    "jun": "June",
+    "jul": "July",
+    "aug": "August",
+    "sep": "September",
+    "oct": "October",
+    "nov": "November",
+    "dec": "December"
   },
   "aboutMe": {
     "firstParagraph": "I am a software engineer, professionally involved in the field since 2020. My expertise lies in languages such as Java (leveraging the Spring framework) and JavaScript/TypeScript (employing the React framework). I am committed to the meticulous craft of clean code and the rigorous application of best programming practices.",
@@ -13,11 +28,8 @@
   },
   "skills": {
     "strengthsSubheader": "Strengths",
-    "certificationsSubheader": "Tranings and courses",
-    "backendTechnologiesSubheader": "Backend",
-    "frontendTechnologiesSubheader": "Frontend",
-    "databaseTechnologiesSubheader": "Databases",
-    "toolsSubheader": "Tools",
+    "certificationsSubheader": "Training Completed",
+    "technologiesSubheader": "Learned Technologies",
     "strengths": {
       "webApplicationDeveloper": {
         "header": "Web Application Developer",
@@ -40,5 +52,11 @@
         "description": "I'm passionate about the architecture of information systems. I strive to delve into the secrets of software design and create scalable, efficient, and flexible systems."
       }
     }
+  },
+  "courses": {
+    "courseNameLabel": "Course",
+    "authorNameLabel": "Author/s",
+    "platformNameLabel": "Platform",
+    "dateOfCompletionLabel": "Date of completion"
   }
 }

@@ -1,35 +1,32 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import Section from "./section/Section";
-import AboutMe from "./section/AboutMe";
-import Portfolio from "./section/Portfolio";
-import Skills from "./section/Skills";
-import PersonalCard from "./navigation/PersonalCard";
+import Section from "./app/section/Section";
+import AboutMe from "./app/section/AboutMe";
+import Portfolio from "./app/section/Portfolio";
+import Skills from "./app/section/skills/Skills";
+import PersonalCard from "./app/PersonalCard";
 import styled from "styled-components";
-import Navigation from "./navigation/Navigation";
+import Navigation from "./app/navigation/Navigation";
 import { SectionDefinition } from "./types";
-import EmploymentHistory from "./section/EmploymentHistory";
-import Education from "./section/Education";
+import EmploymentHistory from "./app/section/EmploymentHistory";
+import Education from "./app/section/Education";
 import { IoIosPerson } from "react-icons/io";
 import { IoBookSharp } from "react-icons/io5";
 import { BsBuildingsFill } from "react-icons/bs";
 import { GiGraduateCap } from "react-icons/gi";
 import { IoBrush } from "react-icons/io5";
 
-//A contact page with your contact information, including email address, phone number, LinkedIn profile, GitHub profile, or other social media profiles.
-//You can also include a contact form for visitors to send you messages directly from your website.
-
 const AppRoot = styled.div`
   background-color: ${(props) => props.theme.mainColor};
 `;
 
 const AppContainer = styled.div`
-  max-width: 1024px;
+  max-width: 1500px;
   margin: auto;
 `;
 
 const NavigationContainer = styled.div`
-  max-width: 1024px;
+  max-width: 1500px;
   position: sticky;
   top: 0;
   background: ${(props) => props.theme.mainColor};

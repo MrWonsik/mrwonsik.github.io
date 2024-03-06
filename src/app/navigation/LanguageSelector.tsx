@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import i18n from "i18next";
 import styled from "styled-components";
-
-const LanguageSelectorContainer = styled.div``;
+import { useTranslation } from "react-i18next";
 
 const FlagSvg = styled.svg`
   width: 30px;
@@ -60,25 +59,33 @@ const EngFlagSvg = () => (
 );
 
 function LanguageSelector() {
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = t("app.pageTitle");
+  });
+
   const changeLanguage = (language: string) => {
-    i18n.changeLanguage(language);
+    i18n.changeLanguage(language).then(() => {
+      document.title = t("app.pageTitle");
+    });
   };
 
   return (
-    <LanguageSelectorContainer>
+    <div>
       <LanguageButton
-        onClick={() => changeLanguage("pl")}
-        selected={i18n.language === "pl"}
+        onClick={() => changeLanguage("pl-PL")}
+        selected={i18n.language === "pl-PL"}
       >
         <PlFlagSvg />
       </LanguageButton>
       <LanguageButton
-        onClick={() => changeLanguage("en")}
-        selected={i18n.language === "en"}
+        onClick={() => changeLanguage("en-US")}
+        selected={i18n.language === "en-US"}
       >
         <EngFlagSvg />
       </LanguageButton>
-    </LanguageSelectorContainer>
+    </div>
   );
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import LanguageSelector from "./LanguageSelector";
-import { SectionDefinition } from "../types";
-import { device } from "../const";
+import { SectionDefinition } from "../../types";
+import { device } from "../../const";
 
 const NavigationContainer = styled.nav`
   text-align: center;
@@ -21,6 +21,7 @@ const NavigationLinkContainer = styled.div`
 const NavigationLink = styled.a`
   text-decoration: none;
   color: ${(props) => props.theme.textColor};
+  text-transform: uppercase;
   &:hover {
     color: ${(props) => props.theme.accentColor};
   }

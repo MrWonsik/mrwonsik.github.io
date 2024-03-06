@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import JustifiedParagraph from "../navigation/JustifiedParagraph";
+import JustifiedParagraph from "./JustifiedParagraph";
 
 //A brief introduction about yourself, including your name, professional title, and a summary of your skills, experiences, and interests.
 
