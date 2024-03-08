@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { SecondaryHeader } from "../ParagraphsAndHeaders";
 
 interface SectionProps {
   id: string;
@@ -14,17 +15,10 @@ const SectionContainer = styled.section`
   justify-content: center;
 `;
 
-const SectionHeader = styled.h2`
-  font-size: 60px;
-  margin-top: 30px;
-  text-align: center;
-  text-transform: uppercase;
-`;
-
 function Section(props: SectionProps) {
   return (
     <SectionContainer id={props.id} className={"sectionContainer"}>
-      <SectionHeader>{props.header}</SectionHeader>
+      <SecondaryHeader>{props.header}</SecondaryHeader>
       {props.component}
     </SectionContainer>
   );

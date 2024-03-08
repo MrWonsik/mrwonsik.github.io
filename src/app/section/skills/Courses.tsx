@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import CourseCard from "./CourseCard";
+import { CourseInfo } from "./CourseInfo";
 
 const CoursesContainer = styled.div`
   display: flex;
@@ -8,128 +10,6 @@ const CoursesContainer = styled.div`
   gap: 100px;
   justify-content: space-evenly;
 `;
-
-const CourseCardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow:
-    rgba(3, 48, 131, 0.4) -5px 5px,
-    rgba(3, 48, 131, 0.3) -10px 10px,
-    rgba(3, 48, 131, 0.2) -15px 15px,
-    rgba(3, 48, 131, 0.1) -20px 20px,
-    rgba(3, 48, 131, 0.05) -25px 25px;
-`;
-
-const CourseCardSection = styled.div`
-  margin: 10px;
-  display: flex;
-  align-items: center;
-`;
-
-const CourseCardImgContainer = styled.div`
-  max-width: 350px;
-  max-height: 350px;
-  align-self: center;
-  & img {
-    max-width: 350px;
-    max-height: 350px;
-  }
-`;
-const CourseAuthorCardImgContainer = styled.div`
-  margin-left: 10px;
-  max-width: 100px;
-  max-height: 100px;
-  & img {
-    max-width: 100px;
-    max-height: 100px;
-  }
-`;
-
-const CourseCardLabel = styled.span`
-  font-size: 23px;
-  font-weight: bold;
-`;
-
-const CourseCardValue = styled.span`
-  font-size: 23px;
-  margin-left: 10px;
-  text-align: center;
-`;
-
-const CourseCardUrl = styled.a`
-  font-size: 23px;
-`;
-
-export interface CourseInfo {
-  id: string;
-  course: {
-    name?: string;
-    logoSrc?: string;
-    url?: string;
-  };
-  author?: {
-    name?: string;
-    logoSrc?: string;
-  };
-  platform?: {
-    name?: string;
-    logoSrc?: string;
-  };
-  dateOfCompletion: string;
-}
-
-const CourseCard = ({ courseCard }: { courseCard: CourseInfo }) => {
-  const { t } = useTranslation();
-  return (
-    <CourseCardContainer>
-      {courseCard.course.logoSrc && (
-        <CourseCardImgContainer>
-          <img src={courseCard.course.logoSrc} alt="course logo" />
-        </CourseCardImgContainer>
-      )}
-      {courseCard.course.name && (
-        <CourseCardSection>
-          <CourseCardLabel>{t("courses.courseNameLabel")}:</CourseCardLabel>
-          <CourseCardValue>{courseCard.course.name}</CourseCardValue>
-        </CourseCardSection>
-      )}
-      {courseCard.author && (
-        <CourseCardSection>
-          <CourseCardLabel>{t("courses.authorNameLabel")}:</CourseCardLabel>
-          {courseCard.author?.name && (
-            <CourseCardValue>{courseCard.author.name}</CourseCardValue>
-          )}
-          {courseCard.author?.logoSrc && (
-            <CourseAuthorCardImgContainer>
-              <img src={courseCard.author.logoSrc} alt="author logo" />
-            </CourseAuthorCardImgContainer>
-          )}
-        </CourseCardSection>
-      )}
-      {courseCard.platform && (
-        <CourseCardSection>
-          <CourseCardLabel>{t("courses.platformNameLabel")}:</CourseCardLabel>
-          <CourseCardValue>{courseCard.platform.name}</CourseCardValue>
-          <CourseAuthorCardImgContainer>
-            <img src={courseCard.platform.logoSrc} alt="platform logo" />
-          </CourseAuthorCardImgContainer>
-        </CourseCardSection>
-      )}
-      <CourseCardSection>
-        <CourseCardLabel>{t("courses.dateOfCompletionLabel")}:</CourseCardLabel>
-        <CourseCardValue>{courseCard.dateOfCompletion}</CourseCardValue>
-      </CourseCardSection>
-      <CourseCardSection>
-        <CourseCardUrl href={courseCard.course.url}>
-          {courseCard.course.url}
-        </CourseCardUrl>
-      </CourseCardSection>
-    </CourseCardContainer>
-  );
-};
 
 function Courses() {
   const { t } = useTranslation();
@@ -180,6 +60,7 @@ function Courses() {
       id: "OracleJava",
       course: {
         name: "Przygotowanie do certyfikatu Oracle Certified Professional Java Developer SE 11",
+        url: "https://www.altkomakademia.pl/szkolenia/oracle-certified-professional-java-developer-se-11/",
       },
       author: {
         name: "Lech Proboszcz",
@@ -193,6 +74,7 @@ function Courses() {
       id: "TSwithReact",
       course: {
         name: "Using TypeScript with React",
+        url: "https://www.udemy.com/course/react-with-typescript",
       },
       author: {
         name: "Dmytro Danylov",
@@ -203,9 +85,13 @@ function Courses() {
       dateOfCompletion: `${t("month.jan")} 2022`,
     },
     {
-      id: "ReactHooks",
+      id: "ModernProjectsReact",
       course: {
-        name: "React Hooks",
+        name: "Bulding Modern Projects with React",
+        url: "https://www.linkedin.com/learning/building-modern-projects-with-react",
+      },
+      author: {
+        name: "Shaun Wassell",
       },
       platform: {
         logoSrc: "/img/courses/linkedinlearning.png",
@@ -213,9 +99,27 @@ function Courses() {
       dateOfCompletion: `${t("month.feb")} 2021`,
     },
     {
-      id: "ModernProjectsReact",
+      id: "solid",
       course: {
-        name: "Bulding Modern Projects with React",
+        name: "Java Design Patterns & SOLID Design Principles",
+        url: "https://www.udemy.com/course/design-patterns-in-java-concepts-hands-on-projects/",
+      },
+      author: {
+        name: "Coffee Powered Crew",
+      },
+      platform: {
+        logoSrc: "/img/courses/udemy.png",
+      },
+      dateOfCompletion: `${t("month.oct")} 2022`,
+    },
+    {
+      id: "ReactHooks",
+      course: {
+        name: "React Hooks",
+        url: "https://www.linkedin.com/learning/react-hooks",
+      },
+      author: {
+        name: "Eve Porcello",
       },
       platform: {
         logoSrc: "/img/courses/linkedinlearning.png",

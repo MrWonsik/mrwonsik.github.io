@@ -57,6 +57,18 @@
     "courseNameLabel": "Course",
     "authorNameLabel": "Author/s",
     "platformNameLabel": "Platform",
-    "dateOfCompletionLabel": "Date of completion"
+    "dateOfCompletionLabel": "Date of completion",
+    "courseDetails": "Course details"
+  },
+  "employmenthistory": {
+    "current": "current",
+    "cornerstone": {
+      "softwareengineer": {
+      },
+      "juniorsoftwareengineer": {
+      },
+      "internsoftwaredeveloper": {
+      }
+    }
   }
 }

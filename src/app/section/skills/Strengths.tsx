@@ -6,7 +6,7 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { GiBroom } from "react-icons/gi";
 import { GiNinjaHead } from "react-icons/gi";
 import { SiBlueprint } from "react-icons/si";
-import JustifiedParagraph from "../JustifiedParagraph";
+import { JustifiedParagraph } from "../../ParagraphsAndHeaders";
 
 const StrengthsGrid = styled.div`
   display: flex;

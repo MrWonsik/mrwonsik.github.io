@@ -10,7 +10,6 @@ const NavigationContainer = styled.nav`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  font-size: 25px;
   background: ${(props) => props.theme.mainColor};
 `;
 

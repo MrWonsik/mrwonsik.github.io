@@ -8,7 +8,7 @@ import PersonalCard from "./app/PersonalCard";
 import styled from "styled-components";
 import Navigation from "./app/navigation/Navigation";
 import { SectionDefinition } from "./types";
-import EmploymentHistory from "./app/section/EmploymentHistory";
+import EmploymentHistory from "./app/section/employmenthistory/EmploymentHistory";
 import Education from "./app/section/Education";
 import { IoIosPerson } from "react-icons/io";
 import { IoBookSharp } from "react-icons/io5";

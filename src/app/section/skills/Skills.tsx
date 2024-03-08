@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Strengths from "./Strengths";
 import { Svg, SvgContainer } from "./SvgContainer";
 import Courses from "./Courses";
+import { ThirdHeader } from "../../ParagraphsAndHeaders";
 
 const SkillsContainer = styled.div`
   display: flex;
@@ -12,12 +13,6 @@ const SkillsContainer = styled.div`
 
 const SubsectionContainer = styled.div`
   margin: 40px 0;
-`;
-
-const SubsectionHeader = styled.h3`
-  font-size: 40px;
-  margin-top: 30px;
-  text-align: center;
 `;
 
 const TechnologiesContainer = styled.div``;
@@ -73,13 +68,11 @@ function Skills() {
         <Strengths />
       </SubsectionContainer>
       <SubsectionContainer>
-        <SubsectionHeader>
-          {t("skills.certificationsSubheader")}
-        </SubsectionHeader>
+        <ThirdHeader>{t("skills.certificationsSubheader")}</ThirdHeader>
         <Courses />
       </SubsectionContainer>
       <SubsectionContainer>
-        <SubsectionHeader>{t("skills.technologiesSubheader")}</SubsectionHeader>
+        <ThirdHeader>{t("skills.technologiesSubheader")}</ThirdHeader>
         <TechnologiesContainer>
           <BackendTechnologies />
           <FrontendTechnologies />

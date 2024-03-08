@@ -16,9 +16,10 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     font-style: normal;
     color: ${(props) => props.theme.textColor};
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     background: ${(props) => props.theme.mainColor};
+    word-wrap: break-word;
   }
   
   html {

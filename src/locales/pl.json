@@ -57,6 +57,21 @@
     "courseNameLabel": "Szkolenie",
     "authorNameLabel": "Autor/Autorzy",
     "platformNameLabel": "Platforma",
-    "dateOfCompletionLabel": "Data ukończenia"
+    "dateOfCompletionLabel": "Data ukończenia",
+    "courseDetails": "Szczegóły szkolenia"
+  },
+  "employmenthistory": {
+    "current": "obecnie",
+    "cornerstone": {
+      "softwareengineer": {
+        "resp1": "Projektowanie, rozwijanie i utrzymywanie oprogramowania.",
+        "resp2": "Testowanie i debugowanie kodu.",
+        "resp3": "Współpraca z zespołem projektowym."
+      },
+      "juniorsoftwareengineer": {
+      },
+      "internsoftwaredeveloper": {
+      }
+    }
   }
 }
