@@ -1,9 +1,9 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Section from "./app/section/Section";
-import AboutMe from "./app/section/AboutMe";
+import AboutMe from "./app/section/aboutme/AboutMe";
 import Portfolio from "./app/section/Portfolio";
-import Skills from "./app/section/skills/Skills";
+import Courses from "./app/section/courses/Courses";
 import PersonalCard from "./app/PersonalCard";
 import styled from "styled-components";
 import Navigation from "./app/navigation/Navigation";
@@ -46,30 +46,35 @@ function App() {
     {
       id: "about",
       header: t("app.aboutMeHeader"),
+      displayHeader: false,
       component: <AboutMe />,
       icon: <IoIosPerson />,
     },
     {
-      id: "skills",
-      header: t("app.skillsHeader"),
-      component: <Skills />,
+      id: "courses",
+      header: t("app.coursesHeader"),
+      displayHeader: true,
+      component: <Courses />,
       icon: <IoBookSharp />,
     },
     {
       id: "employment-history",
       header: t("app.employmentHistoryHeader"),
+      displayHeader: true,
       component: <EmploymentHistory />,
       icon: <BsBuildingsFill />,
     },
     {
       id: "education",
       header: t("app.educationHeader"),
+      displayHeader: true,
       component: <Education />,
       icon: <GiGraduateCap />,
     },
     {
       id: "portfolio",
       header: t("app.portfolioHeader"),
+      displayHeader: true,
       component: <Portfolio />,
       icon: <IoBrush />,
     },
@@ -77,7 +82,7 @@ function App() {
 
   return (
     <AppRoot>
-      <AppContainer>
+      <AppContainer id={"about"}>
         <NavigationContainer>
           <Navigation sectionsList={sections} />
         </NavigationContainer>
@@ -87,6 +92,7 @@ function App() {
             <Section
               key={section.id}
               id={section.id}
+              displayHeader={section.displayHeader}
               header={section.header}
               component={section.component}
               mobileIcon={section.icon}

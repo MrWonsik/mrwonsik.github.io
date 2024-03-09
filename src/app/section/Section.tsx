@@ -4,6 +4,7 @@ import { SecondaryHeader } from "../ParagraphsAndHeaders";
 
 interface SectionProps {
   id: string;
+  displayHeader: boolean;
   header: string;
   component: JSX.Element;
   mobileIcon: JSX.Element;
@@ -18,7 +19,7 @@ const SectionContainer = styled.section`
 function Section(props: SectionProps) {
   return (
     <SectionContainer id={props.id} className={"sectionContainer"}>
-      <SecondaryHeader>{props.header}</SecondaryHeader>
+      {props.displayHeader && <SecondaryHeader>{props.header}</SecondaryHeader>}
       {props.component}
     </SectionContainer>
   );

@@ -19,7 +19,6 @@ const GlobalStyle = createGlobalStyle`
     font-size: 25px;
     margin: 0;
     background: ${(props) => props.theme.mainColor};
-    word-wrap: break-word;
   }
   
   html {

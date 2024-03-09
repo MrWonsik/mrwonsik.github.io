@@ -1,21 +1,14 @@
 import React from "react";
-import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import Strengths from "./Strengths";
-import { Svg, SvgContainer } from "./SvgContainer";
-import Courses from "./Courses";
 import { ThirdHeader } from "../../ParagraphsAndHeaders";
-
-const SkillsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+import Strengths from "./Strengths";
+import styled from "styled-components";
+import { Svg, SvgContainer } from "./SvgContainer";
+import QuoteBox from "../../QuoteBox";
 
 const SubsectionContainer = styled.div`
-  margin: 40px 0;
+  margin: 80px 0;
 `;
-
-const TechnologiesContainer = styled.div``;
 
 const BackendTechnologies = () => {
   return (
@@ -59,29 +52,30 @@ const Tools = () => (
   </SvgContainer>
 );
 
-function Skills() {
+function AboutMe() {
   const { t } = useTranslation();
 
   return (
-    <SkillsContainer>
+    <div>
       <SubsectionContainer>
         <Strengths />
       </SubsectionContainer>
-      <SubsectionContainer>
-        <ThirdHeader>{t("skills.certificationsSubheader")}</ThirdHeader>
-        <Courses />
-      </SubsectionContainer>
+      <QuoteBox
+        author={"Bob Martin"}
+        authorImageUrl={"/img/unclebob.jpg"}
+        sentence={"It is not enough for code to work."}
+      />
       <SubsectionContainer>
         <ThirdHeader>{t("skills.technologiesSubheader")}</ThirdHeader>
-        <TechnologiesContainer>
+        <div>
           <BackendTechnologies />
           <FrontendTechnologies />
           <DatabaseTechnologies />
           <Tools />
-        </TechnologiesContainer>
+        </div>
       </SubsectionContainer>
-    </SkillsContainer>
+    </div>
   );
 }
 
-export default Skills;
+export default AboutMe;

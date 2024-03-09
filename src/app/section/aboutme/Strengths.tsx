@@ -7,6 +7,7 @@ import { GiBroom } from "react-icons/gi";
 import { GiNinjaHead } from "react-icons/gi";
 import { SiBlueprint } from "react-icons/si";
 import { JustifiedParagraph } from "../../ParagraphsAndHeaders";
+import { device } from "../../../const";
 
 const StrengthsGrid = styled.div`
   display: flex;
@@ -20,7 +21,9 @@ const StrengthBlock = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 400px;
-  justify-content: space-around;
+  @media ${device.tablet} {
+    max-width: unset;
+  }
 `;
 
 const StrengthIconContainer = styled.div`
@@ -41,11 +44,6 @@ function Strengths() {
       description: t("skills.strengths.webApplicationDeveloper.description"),
     },
     {
-      icon: <IoShieldCheckmarkSharp />,
-      header: t("skills.strengths.qualityDrivenDeveloper.header"),
-      description: t("skills.strengths.qualityDrivenDeveloper.description"),
-    },
-    {
       icon: <GiBroom />,
       header: t("skills.strengths.cleanCodePractitioner.header"),
       description: t("skills.strengths.cleanCodePractitioner.description"),
@@ -54,6 +52,11 @@ function Strengths() {
       icon: <GiNinjaHead />,
       header: t("skills.strengths.refactoringNinja.header"),
       description: t("skills.strengths.refactoringNinja.description"),
+    },
+    {
+      icon: <IoShieldCheckmarkSharp />,
+      header: t("skills.strengths.qualityDrivenDeveloper.header"),
+      description: t("skills.strengths.qualityDrivenDeveloper.description"),
     },
     {
       icon: <SiBlueprint />,

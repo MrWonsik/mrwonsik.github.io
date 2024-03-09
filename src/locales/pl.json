@@ -2,7 +2,7 @@
   "app": {
     "fieldJobRole": "Inżynier Oprogramowania",
     "aboutMeHeader": "O mnie",
-    "skillsHeader": "Umiejętności",
+    "coursesHeader": "Odbyte szkolenia i kursy",
     "employmentHistoryHeader": "Historia zatrudnienia",
     "educationHeader": "Edukacja",
     "portfolioHeader": "Portfolio",
@@ -23,8 +23,7 @@
     "dec": "Grudzień"
   },
   "aboutMe": {
-    "firstParagraph": "Jestem inżynierem oprogramowania, zawodowo zajmuję się tym od 2020 roku. Specjalizuję się w takich językach jak Java (z wykorzystaniem frameworka Spring) oraz JavaScript/TypeScript (z wykorzystaniem frameworka React). Moją pasją jest tworzenie czystego kodu i przestrzeganie najlepszych praktyk programistycznych.",
-    "secondParagraph": "W trakcie mojej pracy, odkryłem prawdziwą pasję do programowania i staram się doskonalić moje umiejętności by tworzyć dopasowane do oczekiwań rozwiązania."
+    "firstParagraph": "Od 2020 roku profesjonalnie programuję w Java (Spring) i JavaScript/TypeScript (React)."
   },
   "skills": {
     "strengthsSubheader": "Mocne strony",
@@ -33,23 +32,23 @@
     "strengths": {
       "webApplicationDeveloper": {
         "header": "Programista aplikacji webowych",
-        "description": "Tworzę aplikacje internetowe, łącząc frontend i backend. Projektuję interfejsy użytkownika i implementuję logikę biznesową, dbając o interaktywność i responsywność."
+        "description": "Tworzę aplikacje internetowe, łącząc frontend i backend. Projektuję interfejsy użytkownika i implementuję logikę biznesową, dbając o interaktywność i responsywność. Mam doświadczenie z architekturami opartymi o komunikacje synchroniczną oraz asynchroniczną. "
       },
       "qualityDrivenDeveloper": {
         "header": "Programista dbający o jakość",
-        "description": "Regularnie piszę testy jednostkowe oraz integracyjne, aby zapewnić wysoką jakość kodu i ograniczać liczbę powstających błędów. Dzięki temu podejściu, aplikacje przy których pracuje są niezawodne i łatwiejsze w utrzymaniu."
+        "description": "Aby zapewnić wysoką jakość kodu i ograniczać liczbę powstających błędów, dbam o to by, aplikacje były dobrze przetestowane za pomocą testów jednostkowych i integracyjnych. Dzięki temu podejściu, aplikacje przy których pracuje są mniej zawodne i łatwiejsze w utrzymaniu."
       },
       "cleanCodePractitioner": {
         "header": "Fan czystego kodu",
-        "description": "Piszę czytelny, zrozumiały i elegancki kod, stosując najlepsze praktyki programistyczne. Dbam o modularność i czytelność kodu, stosując praktyki: SOLID, KISS, DRY, YAGNI itp."
+        "description": "Piszę czytelny i zrozumiały kod, stosując najlepsze praktyki programistyczne. W czasie swojej zawsze staram się kierować praktykami takimi jak: SOLID, KISS, DRY, YAGNI, a także wielu innym dobrym praktykom propagowanymi między innymi przez Wujka Boba (Bob Martin)."
       },
       "refactoringNinja": {
         "header": "Ninja Refaktoru",
-        "description": "Specjalizuję się w poprawianiu istniejącego kodu, usuwaniu zbędnych elementów i optymalizacji struktury, zapewniając jego czytelność i wydajność. Nie lubię zostawiać wybitych okien"
+        "description": "Specjalizuję się w poprawianiu istniejącego kodu, usuwaniu zbędnych elementów i optymalizacji struktury, zapewniając jego czytelność i wydajność. Zgodnie z teorią rozbitych szyb, staram się zapobiegać \"wybitym oknom\"."
       },
       "architectureEnthusiast": {
         "header": "Entuzjasta Architektury",
-        "description": "Jestem pasjonatem architektury systemów informatycznych, chcę zgłębiać tajniki projektowania oprogramowania i tworzyć skalowalne, wydajne i elastyczne systemy."
+        "description": "Jestem pasjonatem architektury systemów informatycznych, chcę zgłębiać tajniki projektowania oprogramowania i tworzyć skalowalne, wydajne i elastyczne systemy z wykorzystaniem praktyk Domain-Driven Design (DDD)."
       }
     }
   },

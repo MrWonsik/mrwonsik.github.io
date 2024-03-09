@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import SocialLinks from "./SocialLinks";
 import { useTranslation } from "react-i18next";
+import { JustifiedParagraph } from "./ParagraphsAndHeaders";
+import { device } from "../const";
 
 const PersonalCardContainer = styled.div`
   margin-top: 50px;
@@ -11,6 +13,10 @@ const PersonalCardContainer = styled.div`
   justify-content: center;
   border-radius: 10px;
   font-size: 30px;
+
+  @media ${device.mobile} {
+    flex-direction: column;
+  }
 `;
 
 const AvatarContainer = styled.div`
@@ -29,6 +35,9 @@ const Avatar = styled.img`
 const FieldsContainer = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 350px;
+  font-size: 25px;
+  align-items: baseline;
 `;
 
 const Field = styled.p`
@@ -51,6 +60,7 @@ function PersonalCard() {
         <Field>Tomasz Wąsacz</Field>
         <FieldJobRole>{t("app.fieldJobRole")}</FieldJobRole>
         <SocialLinks />
+        <JustifiedParagraph>{t("aboutMe.firstParagraph")}</JustifiedParagraph>
       </FieldsContainer>
     </PersonalCardContainer>
   );
