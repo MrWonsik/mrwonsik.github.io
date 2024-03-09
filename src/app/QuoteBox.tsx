@@ -23,7 +23,7 @@ const AuthorImage = styled.img`
 
 const SentenceBox = styled.div`
   font-size: 30px;
-  display: flex;++
+  display: flex;
   flex-direction: column;
   align-items: end;
   & p {
