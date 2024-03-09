@@ -64,13 +64,39 @@
     "current": "obecnie",
     "cornerstone": {
       "softwareengineer": {
-        "resp1": "Projektowanie, rozwijanie i utrzymywanie oprogramowania.",
-        "resp2": "Testowanie i debugowanie kodu.",
-        "resp3": "Współpraca z zespołem projektowym."
+        "resp1": "Projektowanie, rozwijanie i utrzymywanie aplikacji TalentLink wspierającej proces rekrutacji.",
+        "resp2": "Pełna odpowiedzialność za zarówno część frontendową, jak i backendową aplikacji.",
+        "resp3": "Współpraca z zespołem w doskonaleniu obszaru 'candidate facing' systemu oraz przepisanie części systemu dotyczącej stron kariery.",
+        "resp4": "Wykorzystanie narzędzi do CI/CD dla zapewnienia ciągłości, jakości i efektywności procesu deweloperskiego.",
+        "resp5": "Aktywny udział w projektowaniu interfejsu użytkownika i współpraca z zespołem ds. produktu oraz projektantami UX."
       },
       "juniorsoftwareengineer": {
+        "resp1": "Aktywne uczestnictwo w projektowaniu i rozwijaniu aplikacji TalentLink, wspierającej proces rekrutacji.",
+        "resp2": "Odpowiedzialność za część frontendową i backendową aplikacji.",
+        "resp3": "Współpraca z zespołem w doskonaleniu obszaru 'candidate facing' systemu oraz przepisanie części systemu dotyczącej stron kariery.",
+        "resp4": "Doświadczenie w zapewnianiu zgodności stron internetowych z normami WCAG, dbając o dostępność i użyteczność dla użytkowników z różnymi potrzebami.",
+        "resp5": "Aktywne udział w spotkaniach zespołowych dotyczących planowania projektów i strategii rozwoju aplikacji."
       },
       "internsoftwaredeveloper": {
+        "resp1": "Zastosowanie umiejętności zdobytych podczas nauki do praktycznego tworzenia oprogramowania.",
+        "resp2": "Aktywne działanie z językami programowania Java i React do rozwijania aplikacji oraz stosowanie systemu kontroli wersji Git.",
+        "resp3": "Zrozumienie synchronicznej komunikacji w architekturze REST i pisanie testów jednostkowych.",
+        "resp4": "Uczestnictwo w pracy zespołowej zgodnie z metodyką Agile i wykorzystanie oprogramowania Atlassian do zarządzania projektami.",
+        "resp5": "Rozwój zdolności analitycznych i umiejętności rozwiązywania problemów poprzez praktyczne projekty."
+      }
+    },
+    "i2b": {
+      "itspecialist": {
+        "resp1": "Zarządzanie środowiskami Linux i Windows.",
+        "resp2": "Nadzór nad oprogramowaniem centrum obsługi, w tym systemem Hermes i jego bazą danych MSSQL.",
+        "resp3": "Zarządzanie infrastrukturą sieciową i teleinformatyczną.",
+        "resp4": "Tworzenie i administrowanie domenami przy użyciu narzędzi takich jak Samba i serwer QNAP NAS.",
+        "resp5": "Rozwój skryptów dostosowanych do potrzeb klientów, ze szczególnym uwzględnieniem rozwiązań dla centrów obsługi.",
+        "resp6": "Nadzór nad bezpieczeństwem dostępu do zasobów i zarządzanie grupami użytkowników.",
+        "resp7": "Wdrożenie i utrzymanie systemu antywirusowego ESET.",
+        "resp8": "Zarządzanie i monitorowanie zapory sieciowej Fortigate.",
+        "resp9": "Wykorzystanie języków programowania, takich jak PHP i Bash, do automatyzacji powtarzalnych zadań.",
+        "resp10": "Rozwój narzędzi usprawniających codzienną pracę klientów."
       }
     }
   }

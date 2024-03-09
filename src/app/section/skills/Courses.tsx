@@ -7,7 +7,7 @@ import { CourseInfo } from "./CourseInfo";
 const CoursesContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 60px;
   justify-content: space-evenly;
 `;
 

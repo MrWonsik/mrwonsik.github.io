@@ -64,10 +64,39 @@
     "current": "current",
     "cornerstone": {
       "softwareengineer": {
+        "resp1": "Designing, developing, and maintaining the TalentLink application supporting the recruitment process.",
+        "resp2": "Full responsibility for both the frontend and backend parts of the application.",
+        "resp3": "Collaborating with the team to improve the 'candidate facing' system area and rewriting part of the system related to career pages.",
+        "resp4": "Utilizing CI/CD tools to ensure continuity, quality, and efficiency in the development process.",
+        "resp5": "Actively participating in UI design and collaborating with the product team and UX team."
       },
       "juniorsoftwareengineer": {
+        "resp1": "Actively participating in designing and developing the TalentLink application, supporting the recruitment process.",
+        "resp2": "Responsibility for both the frontend and backend parts of the application.",
+        "resp3": "Collaborating with the team to improve the 'candidate facing' system area and rewriting part of the system related to career pages.",
+        "resp4": "Experience in ensuring website compliance with WCAG standards, ensuring accessibility and usability for users with various needs.",
+        "resp5": "Active participation in team meetings regarding project planning and application development strategies."
       },
       "internsoftwaredeveloper": {
+        "resp1": "Applying skills acquired during studies to practical software development.",
+        "resp2": "Active usage of Java and React for application development, and utilizing Git version control system.",
+        "resp3": "Understanding synchronous communication in REST architecture and writing unit tests.",
+        "resp4": "Participating in teamwork following Agile methodology and using Atlassian software for project management.",
+        "resp5": "Developing analytical skills and problem-solving abilities through practical projects."
+      }
+    },
+    "i2b": {
+      "itspecialist": {
+        "resp1": "Managed both Linux and Windows environments.",
+        "resp2": "Oversaw the call center software, including the Hermes system, and its MSSQL database.",
+        "resp3": "Managed network and teleinformatics infrastructure.",
+        "resp4": "Created and administered domains using tools like Samba and QNAP NAS server.",
+        "resp5": "Developed scripts tailored to client needs, particularly focusing on call center solutions.",
+        "resp6": "Supervised access security to resources and managed user groups.",
+        "resp7": "Implemented and maintained the ESET antivirus system.",
+        "resp8": "Managed and monitored the Fortigate network firewall.",
+        "resp9": "Utilized programming languages such as PHP and Bash to automate repetitive tasks.",
+        "resp10": "Developed tools to streamline daily work processes for clients."
       }
     }
   }

@@ -36,7 +36,7 @@ const BasicInfo = styled.div`
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 40%;
+  flex: 1;
   & p {
     margin: 5px;
   }
@@ -63,12 +63,13 @@ const PeriodContainer = styled.div`
 const Details = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  flex: 3;
 `;
 
 const ResponsibilityContainer = styled.div`
   padding: 5px;
   & span {
+    text-align: justify;
     margin-left: 10px;
   }
 `;

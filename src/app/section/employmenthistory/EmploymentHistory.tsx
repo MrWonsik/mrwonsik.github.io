@@ -32,6 +32,8 @@ function EmploymentHistory() {
         t("employmenthistory.cornerstone.softwareengineer.resp1"),
         t("employmenthistory.cornerstone.softwareengineer.resp2"),
         t("employmenthistory.cornerstone.softwareengineer.resp3"),
+        t("employmenthistory.cornerstone.softwareengineer.resp4"),
+        t("employmenthistory.cornerstone.softwareengineer.resp5"),
       ],
     },
     {
@@ -43,7 +45,13 @@ function EmploymentHistory() {
       role: "Junior Software Engineer",
       startDate: `${t("month.sep")} 2020`,
       endDate: `${t("month.mar")} 2022`,
-      responsibilities: [],
+      responsibilities: [
+        t("employmenthistory.cornerstone.juniorsoftwareengineer.resp1"),
+        t("employmenthistory.cornerstone.juniorsoftwareengineer.resp2"),
+        t("employmenthistory.cornerstone.juniorsoftwareengineer.resp3"),
+        t("employmenthistory.cornerstone.juniorsoftwareengineer.resp4"),
+        t("employmenthistory.cornerstone.juniorsoftwareengineer.resp5"),
+      ],
     },
     {
       id: 3,
@@ -54,7 +62,13 @@ function EmploymentHistory() {
       role: "Intern Software Developer",
       startDate: `${t("month.jan")} 2020`,
       endDate: `${t("month.sep")} 2020`,
-      responsibilities: [],
+      responsibilities: [
+        t("employmenthistory.cornerstone.internsoftwaredeveloper.resp1"),
+        t("employmenthistory.cornerstone.internsoftwaredeveloper.resp2"),
+        t("employmenthistory.cornerstone.internsoftwaredeveloper.resp3"),
+        t("employmenthistory.cornerstone.internsoftwaredeveloper.resp4"),
+        t("employmenthistory.cornerstone.internsoftwaredeveloper.resp5"),
+      ],
     },
     {
       id: 3,
@@ -65,7 +79,18 @@ function EmploymentHistory() {
       role: "IT Specialist",
       startDate: `${t("month.jan")} 2020`,
       endDate: `${t("month.sep")} 2020`,
-      responsibilities: [],
+      responsibilities: [
+        t("employmenthistory.i2b.itspecialist.resp1"),
+        t("employmenthistory.i2b.itspecialist.resp2"),
+        t("employmenthistory.i2b.itspecialist.resp3"),
+        t("employmenthistory.i2b.itspecialist.resp4"),
+        t("employmenthistory.i2b.itspecialist.resp5"),
+        t("employmenthistory.i2b.itspecialist.resp6"),
+        t("employmenthistory.i2b.itspecialist.resp7"),
+        t("employmenthistory.i2b.itspecialist.resp8"),
+        t("employmenthistory.i2b.itspecialist.resp9"),
+        t("employmenthistory.i2b.itspecialist.resp10"),
+      ],
     },
   ];
 
