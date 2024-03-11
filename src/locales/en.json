@@ -98,5 +98,27 @@
         "resp10": "Developed tools to streamline daily work processes for clients."
       }
     }
+  },
+  "education": {
+    "pk": {
+      "name": "Cracow University of Technology",
+      "title": "Bachelor of Engineering, Computer Science",
+      "description": {
+        "paragraph1": "During my studies, I had the opportunity to delve into various aspects of computer science, including <strong>software design, computer networks, databases, and algorithms</strong>. I participated in numerous team projects, which allowed me to develop collaboration skills and problem-solving abilities within a group. Working in a team on various IT projects enriched my experience.",
+        "paragraph2": "As part of my diploma thesis, I developed an application for <strong>managing household finances</strong>. The project included the implementation of the user interface and application logic, along with comprehensive infrastructure. The diploma thesis was supplemented with detailed documentation, which thoroughly describes all aspects of the application and its creation process.",
+        "paragraph3": "Additionally, throughout my academic journey, I had the honor of receiving the <strong>rector's scholarship for top students</strong>."
+      }
+    },
+    "zse": {
+      "name": "Zespół Szkół Elektronicznych; Technikum no. 6",
+      "title": "Technician of Computer Science",
+      "description": {
+        "paragraph1": "During my studies, I obtained three qualifications:",
+        "e12": "Assembly and operation of personal computers and peripheral devices,",
+        "e13": "Designing local computer networks and network administration,",
+        "e14": "Creating web applications and databases and administering them,",
+        "paragraph2": "Throughout my studies, I received a scholarship under the <strong>'Young Engineer'</strong> program."
+      }
+    }
   }
 }

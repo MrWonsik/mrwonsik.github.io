@@ -1,12 +1,15 @@
 import React from "react";
-import { EmploymentHistoryInfo } from "./EmploymentHistoryInfo";
+import { EducationInfo } from "./EducationInfo";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { BiSolidCalendar } from "react-icons/bi";
 import { PiArrowFatLinesRightFill } from "react-icons/pi";
 import { device } from "../../../const";
-import { BoldedParagraph, ItalicParagraph } from "../../ParagraphsAndHeaders";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import {
+  BoldedParagraph,
+  ItalicParagraph,
+  JustifiedParagraph,
+} from "../../ParagraphsAndHeaders";
 
 const TabContainer = styled.div`
   display: flex;
@@ -60,56 +63,29 @@ const PeriodContainer = styled.div`
   }
 `;
 
-const Details = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex: 3;
-`;
-
-const ResponsibilityContainer = styled.div`
-  padding: 5px;
-  & span {
-    text-align: justify;
-    margin-left: 10px;
-  }
-`;
-
-function EmploymentHistoryCard({
-  employmentHistory,
-}: {
-  employmentHistory: EmploymentHistoryInfo;
-}) {
+function EducationCard({ educationInfo }: { educationInfo: EducationInfo }) {
   const { t } = useTranslation();
 
   return (
     <TabContainer>
       <BasicInfo>
         <CompanyLogoContainer>
-          <img src={employmentHistory.company.logo} alt={"company logo"} />
+          <img src={educationInfo.university.logoSrc} alt={"university logo"} />
         </CompanyLogoContainer>
         <NameAndRoleFields>
-          <BoldedParagraph>{employmentHistory.company.name}</BoldedParagraph>
-          <ItalicParagraph>{employmentHistory.role}</ItalicParagraph>
+          <BoldedParagraph>{educationInfo.university.name}</BoldedParagraph>
+          <ItalicParagraph>{educationInfo.title}</ItalicParagraph>
         </NameAndRoleFields>
         <PeriodContainer>
           <BiSolidCalendar />
-          <p>{employmentHistory.startDate}</p>
+          <p>{educationInfo.startDate}</p>
           <PiArrowFatLinesRightFill />
-          <p>{employmentHistory.endDate || t("employmenthistory.current")}</p>
+          <p>{educationInfo.endDate}</p>
         </PeriodContainer>
+        {educationInfo.descriptionComponent}
       </BasicInfo>
-      <Details>
-        {employmentHistory.responsibilities.map((responsible, index) => {
-          return (
-            <ResponsibilityContainer key={index}>
-              <MdKeyboardArrowRight />
-              <span>{responsible}</span>
-            </ResponsibilityContainer>
-          );
-        })}
-      </Details>
     </TabContainer>
   );
 }
 
-export default EmploymentHistoryCard;
+export default EducationCard;

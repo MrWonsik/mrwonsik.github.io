@@ -5,6 +5,7 @@ import Strengths from "./Strengths";
 import styled from "styled-components";
 import { Svg, SvgContainer } from "./SvgContainer";
 import QuoteBox from "../../QuoteBox";
+import PersonalCard from "./PersonalCard";
 
 const SubsectionContainer = styled.div`
   margin: 80px 0;
@@ -57,6 +58,7 @@ function AboutMe() {
 
   return (
     <div>
+      <PersonalCard />
       <SubsectionContainer>
         <Strengths />
       </SubsectionContainer>

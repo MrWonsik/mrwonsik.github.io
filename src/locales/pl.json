@@ -98,5 +98,27 @@
         "resp10": "Rozwój narzędzi usprawniających codzienną pracę klientów."
       }
     }
+  },
+  "education": {
+    "pk": {
+      "name": "Politechnika Krakowska im. Tadeusza Kościuszki",
+      "title": "Inżynier, Informatyka (na wydziale WIEiK)",
+      "description": {
+        "paragraph1": "Podczas studiów miałem okazję zgłębiać różnorodne aspekty informatyki, w tym <strong>projektowanie oprogramowania, sieci komputerowe, bazy danych oraz algorytmy</strong>. Uczestniczyłem w licznych projektach zespołowych, co pozwoliło mi rozwijać umiejętności współpracy i rozwiązywania problemów w grupie. Praca w zespole nad różnorodnymi projektami informatycznymi wzbogaciła moje doświadczenie.",
+        "paragraph2": "W ramach mojej pracy dyplomowej przygotowałem aplikację do <strong>zarządzania finansami domowymi</strong>. Projekt uwzględniał implementację interfejsu użytkownika oraz logiki aplikacji, wraz z kompleksową infrastrukturą. Praca dyplomowa została uzupełniona o dokładną dokumentację, która szczegółowo opisuje wszystkie aspekty aplikacji oraz proces jej tworzenia.",
+        "paragraph3": "Dodatkowo, przez cały okres nauki miałem zaszczyt otrzymywać <strong>stypendium rektora dla najlepszych studentów.</strong>"
+      }
+    },
+    "zse": {
+      "name": "Zespół Szkół Elektronicznych; Technikum nr. 6",
+      "title": "Technik Informatyk",
+      "description": {
+        "paragraph1": "W trakcie mojej nauki uzyskałem trzy kwalifikacje:",
+        "e12": "Montaż i eksploatacja komputerów osobistych oraz urządzeń peryferyjnych,",
+        "e13": "Projektowanie lokalnych sieci komputerowych oraz administrowanie sieciami,",
+        "e14": "Tworzenie aplikacji internetowych i baz danych oraz administrowanie nimi,",
+        "paragraph2": "Przez cały okres nauki otrzymywałem stypendium w ramach programu <strong>\"Młody Inżynier\"</strong>."
+      }
+    }
   }
 }

@@ -4,12 +4,12 @@ import Section from "./app/section/Section";
 import AboutMe from "./app/section/aboutme/AboutMe";
 import Portfolio from "./app/section/Portfolio";
 import Courses from "./app/section/courses/Courses";
-import PersonalCard from "./app/PersonalCard";
+import PersonalCard from "./app/section/aboutme/PersonalCard";
 import styled from "styled-components";
 import Navigation from "./app/navigation/Navigation";
 import { SectionDefinition } from "./types";
 import EmploymentHistory from "./app/section/employmenthistory/EmploymentHistory";
-import Education from "./app/section/Education";
+import Education from "./app/section/education/Education";
 import { IoIosPerson } from "react-icons/io";
 import { IoBookSharp } from "react-icons/io5";
 import { BsBuildingsFill } from "react-icons/bs";
@@ -36,7 +36,6 @@ const MainContainerContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 20px;
 `;
 
 function App() {
@@ -87,7 +86,6 @@ function App() {
           <Navigation sectionsList={sections} />
         </NavigationContainer>
         <MainContainerContainer>
-          <PersonalCard />
           {sections.map((section) => (
             <Section
               key={section.id}

@@ -21,6 +21,7 @@ const StrengthBlock = styled.div`
   flex-direction: column;
   align-items: center;
   max-width: 400px;
+  text-align: center;
   @media ${device.tablet} {
     max-width: unset;
   }
