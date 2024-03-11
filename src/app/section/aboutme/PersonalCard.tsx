@@ -12,7 +12,6 @@ const PersonalCardContainer = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  font-size: 30px;
   @media ${device.mobile} {
     flex-direction: column;
   }
@@ -35,7 +34,6 @@ const FieldsContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 350px;
-  font-size: 25px;
   align-items: baseline;
   @media ${device.mobile} {
     align-items: center;
@@ -43,10 +41,12 @@ const FieldsContainer = styled.div`
 `;
 
 const Field = styled.p`
+  font-size: 28px;
   margin: 5px;
 `;
 
 const FieldJobRole = styled(Field)`
+  font-size: 30px;
   font-weight: 700;
 `;
 

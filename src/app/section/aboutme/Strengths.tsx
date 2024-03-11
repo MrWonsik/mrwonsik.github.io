@@ -6,7 +6,10 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { GiBroom } from "react-icons/gi";
 import { GiNinjaHead } from "react-icons/gi";
 import { SiBlueprint } from "react-icons/si";
-import { JustifiedParagraph } from "../../ParagraphsAndHeaders";
+import {
+  BoldedParagraph,
+  JustifiedParagraph,
+} from "../../ParagraphsAndHeaders";
 import { device } from "../../../const";
 
 const StrengthsGrid = styled.div`
@@ -28,10 +31,10 @@ const StrengthBlock = styled.div`
 `;
 
 const StrengthIconContainer = styled.div`
-  font-size: 70px;
+  font-size: 80px;
 `;
 
-const StrengthHeader = styled.h4`
+const StrengthHeader = styled(BoldedParagraph)`
   margin: 10px;
 `;
 

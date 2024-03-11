@@ -6,10 +6,12 @@ export const JustifiedParagraph = styled.p`
 
 export const BoldedParagraph = styled.p`
   font-weight: bold;
+  font-size: 30px;
 `;
 
 export const ItalicParagraph = styled.p`
   font-style: italic;
+  font-size: 28px;
 `;
 
 export const SecondaryHeader = styled.h2`

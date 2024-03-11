@@ -58,7 +58,6 @@ const PeriodContainer = styled.div`
   align-items: center;
   justify-content: center;
   & p {
-    font-size: 22px;
     margin: 10px;
   }
 `;
