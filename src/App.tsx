@@ -2,9 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Section from "./app/section/Section";
 import AboutMe from "./app/section/aboutme/AboutMe";
-import Portfolio from "./app/section/Portfolio";
+import Portfolio from "./app/section/portfolio/Portfolio";
 import Courses from "./app/section/courses/Courses";
-import PersonalCard from "./app/section/aboutme/PersonalCard";
 import styled from "styled-components";
 import Navigation from "./app/navigation/Navigation";
 import { SectionDefinition } from "./types";
@@ -15,6 +14,7 @@ import { IoBookSharp } from "react-icons/io5";
 import { BsBuildingsFill } from "react-icons/bs";
 import { GiGraduateCap } from "react-icons/gi";
 import { IoBrush } from "react-icons/io5";
+import Footer from "./app/Footer";
 
 const AppRoot = styled.div`
   background-color: ${(props) => props.theme.mainColor};
@@ -70,13 +70,13 @@ function App() {
       component: <Education />,
       icon: <GiGraduateCap />,
     },
-    {
-      id: "portfolio",
-      header: t("app.portfolioHeader"),
-      displayHeader: true,
-      component: <Portfolio />,
-      icon: <IoBrush />,
-    },
+    // {
+    //   id: "portfolio",
+    //   header: t("app.portfolioHeader"),
+    //   displayHeader: true,
+    //   component: <Portfolio />,
+    //   icon: <IoBrush />,
+    // },
   ];
 
   return (
@@ -97,6 +97,7 @@ function App() {
             />
           ))}
         </MainContainerContainer>
+        <Footer />
       </AppContainer>
     </AppRoot>
   );
