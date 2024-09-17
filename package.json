@@ -16,6 +16,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "clean-and-copy": "rm -rf ./docs/* && cp -r ./dist/* ./docs/",
+    "copy": "vite build && npm run clean-and-copy",
     "preview": "vite preview"
   },
   "devDependencies": {

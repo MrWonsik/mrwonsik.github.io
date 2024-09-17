@@ -166,12 +166,13 @@ Error generating stack: `+o.message+`
   max-width: 350px;
   padding: 25px;
   border-radius: 10px;
-  box-shadow:
-    rgba(3, 48, 131, 0.4) -5px 5px,
-    rgba(3, 48, 131, 0.3) -10px 10px,
-    rgba(3, 48, 131, 0.2) -15px 15px,
-    rgba(3, 48, 131, 0.1) -20px 20px,
-    rgba(3, 48, 131, 0.05) -25px 25px;
+  box-shadow: ${e=>` 
+    ${e.theme.accentColor}66 -5px 5px,
+    ${e.theme.accentColor}4D -10px 10px,
+    ${e.theme.accentColor}33 -15px 15px,
+    ${e.theme.accentColor}1A -20px 20px,
+    ${e.theme.accentColor}0D -25px 25px;
+  `}
 `,zi=O.div`
   margin: 10px;
   display: flex;
