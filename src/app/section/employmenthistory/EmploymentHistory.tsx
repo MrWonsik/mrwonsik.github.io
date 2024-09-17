@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import EmploymentHistoryCard from "./EmploymentHistoryCard";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
@@ -19,15 +19,12 @@ function EmploymentHistory() {
   return (
     <EmploymentHistoryContainer>
       {employmentHistoryData.map((employmentHistory, index) => (
-        <>
-          <EmploymentHistoryCard
-            key={employmentHistory.id}
-            employmentHistory={employmentHistory}
-          />
+        <Fragment key={employmentHistory.id}>
+          <EmploymentHistoryCard employmentHistory={employmentHistory} />
           {employmentHistoryData.length - 1 != index && (
             <PiArrowFatLineUpFillStyled />
           )}
-        </>
+        </Fragment>
       ))}
     </EmploymentHistoryContainer>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styled from "styled-components";
 import EducationCard from "./EducationCard";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
@@ -19,10 +19,10 @@ function Education() {
   return (
     <EducationContainer>
       {educationData.map((education, index) => (
-        <>
-          <EducationCard key={education.id} educationInfo={education} />
+        <Fragment key={education.id}>
+          <EducationCard educationInfo={education} />
           {educationData.length - 1 != index && <PiArrowFatLineUpFillStyled />}
-        </>
+        </Fragment>
       ))}
     </EducationContainer>
   );

@@ -29,7 +29,7 @@ export const data: Array<CourseInfo> = [
       logoSrc: "/assets/courses/devstyle.png",
     },
     dateOfCompletion: "month.feb",
-    yearOfCompletion: "2024",
+    yearOfCompletion: "2024"
   },
   {
     id: "LF",
@@ -133,6 +133,6 @@ export const data: Array<CourseInfo> = [
       logoSrc: "/assets/courses/linkedinlearning.png",
     },
     dateOfCompletion: "month.feb",
-    yearOfCompletion: "2021",
+    yearOfCompletion: "2021"
   },
 ];

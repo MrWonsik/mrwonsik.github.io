@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import Section from "./app/section/Section";
 import AboutMe from "./app/section/aboutme/AboutMe";
-import Portfolio from "./app/section/portfolio/Portfolio";
 import Courses from "./app/section/courses/Courses";
 import styled from "styled-components";
 import Navigation from "./app/navigation/Navigation";
@@ -13,7 +12,6 @@ import { IoIosPerson } from "react-icons/io";
 import { IoBookSharp } from "react-icons/io5";
 import { BsBuildingsFill } from "react-icons/bs";
 import { GiGraduateCap } from "react-icons/gi";
-import { IoBrush } from "react-icons/io5";
 import Footer from "./app/Footer";
 
 const AppRoot = styled.div`

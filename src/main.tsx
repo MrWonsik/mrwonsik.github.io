@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 import "./i18n";
 import App from "./App";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
@@ -26,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById("root");
 
 if (rootElement) {
   const root = ReactDOM.createRoot(rootElement);
@@ -36,8 +36,8 @@ if (rootElement) {
         <GlobalStyle />
         <App />
       </ThemeProvider>
-    </React.StrictMode>
+    </React.StrictMode>,
   );
 } else {
-  console.error('Root element not found');
+  console.error("Root element not found");
 }
