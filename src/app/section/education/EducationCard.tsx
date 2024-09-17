@@ -68,6 +68,7 @@ function obtainDescriptionComponent(id: string) {
 }
 
 function EducationCard({ educationInfo }: { educationInfo: EducationInfo }) {
+  const { t } = useTranslation();
   return (
     <HorizontalCard
       logo={{
@@ -76,15 +77,15 @@ function EducationCard({ educationInfo }: { educationInfo: EducationInfo }) {
       }}
       fields={[
         <BoldedParagraph key="companyName">
-          {educationInfo.university.name}
+          {educationInfo.university.name && t(educationInfo.university.name)}
         </BoldedParagraph>,
         <ItalicParagraph key="companyRole">
-          {educationInfo.title}
+          {t(educationInfo.title)}
         </ItalicParagraph>,
       ]}
       period={{
-        startDate: educationInfo.startDate,
-        endDate: educationInfo.endDate,
+        startDate: `${t(educationInfo.startDate)} ${educationInfo.startYear}`,
+        endDate: `${t(educationInfo.endDate)} ${educationInfo.endYear}`,
       }}
       detailComponent={obtainDescriptionComponent(educationInfo.id)}
     />
