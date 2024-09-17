@@ -6,6 +6,7 @@ export interface EducationInfo {
   };
   title: string;
   startDate: string;
+  startYear: string;
   endDate: string;
-  descriptionComponent: JSX.Element;
+  endYear: string;
 }

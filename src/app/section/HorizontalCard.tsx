@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import { BiSolidCalendar } from "react-icons/bi";
 import { PiArrowFatLinesRightFill } from "react-icons/pi";
 import styled from "styled-components";
@@ -86,11 +86,7 @@ function HorizontalCard({
         <CompanyLogoContainer>
           <img src={logo.src} alt={logo.alt} />
         </CompanyLogoContainer>
-        <Fields>
-          {fields.map((f: any) => {
-            return f;
-          })}
-        </Fields>
+        <Fields>{fields.map((f: ReactNode) => f)}</Fields>
         {period && (
           <PeriodContainer>
             <BiSolidCalendar />

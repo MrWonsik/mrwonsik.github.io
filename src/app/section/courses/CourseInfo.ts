@@ -14,4 +14,5 @@ export interface CourseInfo {
     logoSrc?: string;
   };
   dateOfCompletion: string;
+  yearOfCompletion: string;
 }

@@ -21,6 +21,13 @@ function EmploymentHistoryCard({
 }) {
   const { t } = useTranslation();
 
+  const obtainEndDate = () => {
+    if (employmentHistory.endDate) {
+      return `${t(employmentHistory.endDate)} ${employmentHistory.endYear}`;
+    }
+    return t("employmenthistory.current");
+  };
+
   return (
     <HorizontalCard
       logo={{
@@ -36,8 +43,8 @@ function EmploymentHistoryCard({
         </ItalicParagraph>,
       ]}
       period={{
-        startDate: employmentHistory.startDate,
-        endDate: employmentHistory.endDate || t("employmenthistory.current"),
+        startDate: `${t(employmentHistory.startDate)} ${employmentHistory.startYear}`,
+        endDate: obtainEndDate(),
       }}
       detailComponent={
         <>
@@ -45,7 +52,7 @@ function EmploymentHistoryCard({
             return (
               <ResponsibilityContainer key={index}>
                 <MdKeyboardArrowRight />
-                <span>{responsible}</span>
+                <span>{t(responsible)}</span>
               </ResponsibilityContainer>
             );
           })}

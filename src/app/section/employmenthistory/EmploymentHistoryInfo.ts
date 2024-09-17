@@ -6,6 +6,8 @@ export interface EmploymentHistoryInfo {
   };
   role: string;
   startDate: string;
+  startYear: string;
   endDate?: string;
+  endYear?: string;
   responsibilities: Array<string>;
 }

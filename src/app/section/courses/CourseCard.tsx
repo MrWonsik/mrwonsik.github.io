@@ -107,11 +107,11 @@ function CourseCard({ courseCard }: { courseCard: CourseInfo }) {
       )}
       <CourseCardSection>
         <CourseCardLabel>{t("courses.dateOfCompletionLabel")}:</CourseCardLabel>
-        <CourseCardValue>{courseCard.dateOfCompletion}</CourseCardValue>
+        <CourseCardValue>{`${t(courseCard.dateOfCompletion)} ${courseCard.yearOfCompletion}`}</CourseCardValue>
       </CourseCardSection>
       {courseCard?.course?.url && (
         <CourseCardUrlContainer>
-          <CourseCardUrl href={courseCard.course.url}>
+          <CourseCardUrl href={courseCard.course.url} target="_blank">
             {t("courses.courseDetails")}
           </CourseCardUrl>
         </CourseCardUrlContainer>
