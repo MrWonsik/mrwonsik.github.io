@@ -56,7 +56,7 @@ function PersonalCard() {
   return (
     <PersonalCardContainer>
       <AvatarContainer>
-        <Avatar src="/img/avatar.jpg" />
+        <Avatar src="/assets/avatar.jpg" />
       </AvatarContainer>
       <FieldsContainer>
         <Field>Tomasz Wąsacz</Field>

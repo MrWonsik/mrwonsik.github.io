@@ -4,14 +4,14 @@ export const data: Array<CourseInfo> = [
   {
     id: "DD",
     course: {
-      logoSrc: "/img/courses/dd.png",
+      logoSrc: "/assets/courses/dd.png",
       url: "https://domaindrivers.pl",
     },
     author: {
       name: "Sławomir Sobótka, Jakub Pilomon",
     },
     platform: {
-      logoSrc: "/img/courses/devstyle.png",
+      logoSrc: "/assets/courses/devstyle.png",
     },
     dateOfCompletion: "month.sep",
     yearOfCompletion: "2024",
@@ -19,14 +19,14 @@ export const data: Array<CourseInfo> = [
   {
     id: "DNA",
     course: {
-      logoSrc: "/img/courses/dna.png",
+      logoSrc: "/assets/courses/dna.png",
       url: "https://droganowoczesnegoarchitekta.pl",
     },
     author: {
       name: "Jakub Pilomon, Mateusz Gil, Sławomir Sobótka",
     },
     platform: {
-      logoSrc: "/img/courses/devstyle.png",
+      logoSrc: "/assets/courses/devstyle.png",
     },
     dateOfCompletion: "month.feb",
     yearOfCompletion: "2024",
@@ -34,14 +34,14 @@ export const data: Array<CourseInfo> = [
   {
     id: "LF",
     course: {
-      logoSrc: "/img/courses/LegacyFighter.png",
+      logoSrc: "/assets/courses/LegacyFighter.png",
       url: "https://legacyfighter.pl",
     },
     author: {
       name: "Jakub Pilomon, Łukasz Szydło, Jakub Kubryński",
     },
     platform: {
-      logoSrc: "/img/courses/devstyle.png",
+      logoSrc: "/assets/courses/devstyle.png",
     },
     dateOfCompletion: "month.apr",
     yearOfCompletion: "2023",
@@ -55,7 +55,7 @@ export const data: Array<CourseInfo> = [
       name: "Michał Jabłoński",
     },
     platform: {
-      logoSrc: "/img/courses/altkomakademia.png",
+      logoSrc: "/assets/courses/altkomakademia.png",
     },
     dateOfCompletion: "month.oct",
     yearOfCompletion: "2022",
@@ -70,7 +70,7 @@ export const data: Array<CourseInfo> = [
       name: "Lech Proboszcz",
     },
     platform: {
-      logoSrc: "/img/courses/altkomakademia.png",
+      logoSrc: "/assets/courses/altkomakademia.png",
     },
     dateOfCompletion: "month.feb",
     yearOfCompletion: "2022",
@@ -85,7 +85,7 @@ export const data: Array<CourseInfo> = [
       name: "Dmytro Danylov",
     },
     platform: {
-      logoSrc: "/img/courses/udemy.png",
+      logoSrc: "/assets/courses/udemy.png",
     },
     dateOfCompletion: "month.jan",
     yearOfCompletion: "2022",
@@ -100,7 +100,7 @@ export const data: Array<CourseInfo> = [
       name: "Shaun Wassell",
     },
     platform: {
-      logoSrc: "/img/courses/linkedinlearning.png",
+      logoSrc: "/assets/courses/linkedinlearning.png",
     },
     dateOfCompletion: "month.feb",
     yearOfCompletion: "2021",
@@ -115,7 +115,7 @@ export const data: Array<CourseInfo> = [
       name: "Coffee Powered Crew",
     },
     platform: {
-      logoSrc: "/img/courses/udemy.png",
+      logoSrc: "/assets/courses/udemy.png",
     },
     dateOfCompletion: "month.oct",
     yearOfCompletion: "2022",
@@ -130,7 +130,7 @@ export const data: Array<CourseInfo> = [
       name: "Eve Porcello",
     },
     platform: {
-      logoSrc: "/img/courses/linkedinlearning.png",
+      logoSrc: "/assets/courses/linkedinlearning.png",
     },
     dateOfCompletion: "month.feb",
     yearOfCompletion: "2021",

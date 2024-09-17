@@ -14,10 +14,10 @@ const SubsectionContainer = styled.div`
 const BackendTechnologies = () => {
   return (
     <SvgContainer>
-      <Svg src="/img/tech-svg/java.svg" />
-      <Svg src="/img/tech-svg/spring.svg" />
-      <Svg src="/img/tech-svg/JUnit5.png" />
-      <Svg src="/img/tech-svg/mockito.png" />
+      <Svg src="/assets/tech-svg/java.svg" />
+      <Svg src="/assets/tech-svg/spring.svg" />
+      <Svg src="/assets/tech-svg/JUnit5.png" />
+      <Svg src="/assets/tech-svg/mockito.png" />
     </SvgContainer>
   );
 };
@@ -25,31 +25,31 @@ const BackendTechnologies = () => {
 const DatabaseTechnologies = () => {
   return (
     <SvgContainer>
-      <Svg src="/img/tech-svg/mysql.svg" />
-      <Svg src="/img/tech-svg/postgresql.svg" />
-      <Svg src="/img/tech-svg/oracle.svg" />
-      <Svg src="/img/tech-svg/mongodb.svg" />
-      <Svg src="/img/tech-svg/elasticsearch.svg" />
+      <Svg src="/assets/tech-svg/mysql.svg" />
+      <Svg src="/assets/tech-svg/postgresql.svg" />
+      <Svg src="/assets/tech-svg/oracle.svg" />
+      <Svg src="/assets/tech-svg/mongodb.svg" />
+      <Svg src="/assets/tech-svg/elasticsearch.svg" />
     </SvgContainer>
   );
 };
 
 const FrontendTechnologies = () => (
   <SvgContainer>
-    <Svg src="/img/tech-svg/html.svg" />
-    <Svg src="/img/tech-svg/css.svg" />
-    <Svg src="/img/tech-svg/js.svg" />
-    <Svg src="/img/tech-svg/ts.svg" />
-    <Svg src="/img/tech-svg/react.svg" />
+    <Svg src="/assets/tech-svg/html.svg" />
+    <Svg src="/assets/tech-svg/css.svg" />
+    <Svg src="/assets/tech-svg/js.svg" />
+    <Svg src="/assets/tech-svg/ts.svg" />
+    <Svg src="/assets/tech-svg/react.svg" />
   </SvgContainer>
 );
 
 const Tools = () => (
   <SvgContainer>
-    <Svg src="/img/tech-svg/git.svg" />
-    <Svg src="/img/tech-svg/jira.svg" />
-    <Svg src="/img/tech-svg/jenkins.svg" />
-    <Svg src="/img/tech-svg/docker.svg" />
+    <Svg src="/assets/tech-svg/git.svg" />
+    <Svg src="/assets/tech-svg/jira.svg" />
+    <Svg src="/assets/tech-svg/jenkins.svg" />
+    <Svg src="/assets/tech-svg/docker.svg" />
   </SvgContainer>
 );
 
@@ -64,7 +64,7 @@ function AboutMe() {
       </SubsectionContainer>
       <QuoteBox
         author={"Bob Martin"}
-        authorImageUrl={"/img/unclebob.jpg"}
+        authorImageUrl={"/assets/unclebob.jpg"}
         sentence={"It is not enough for code to work."}
       />
       <SubsectionContainer>

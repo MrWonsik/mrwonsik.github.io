@@ -5,7 +5,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     id: 1,
     company: {
       name: "Cornerstone OnDemand",
-      logo: "/img/companies/cornerstone.png",
+      logo: "/assets/companies/cornerstone.png",
     },
     role: "Software Engineer",
     startDate: "month.mar",
@@ -22,7 +22,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     id: 2,
     company: {
       name: "Cornerstone OnDemand",
-      logo: "/img/companies/cornerstone.png",
+      logo: "/assets/companies/cornerstone.png",
     },
     role: "Junior Software Engineer",
     startDate: "month.sep",
@@ -41,7 +41,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     id: 3,
     company: {
       name: "Saba Software",
-      logo: "/img/companies/saba.png",
+      logo: "/assets/companies/saba.png",
     },
     role: "Intern Software Developer",
     startDate: "month.jan",
@@ -60,7 +60,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     id: 3,
     company: {
       name: "i2B IT to Business Solutions",
-      logo: "/img/companies/i2b.png",
+      logo: "/assets/companies/i2b.png",
     },
     role: "IT Specialist",
     startDate: "month.jan",

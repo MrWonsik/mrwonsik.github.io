@@ -5,7 +5,7 @@ export const educationData: Array<EducationInfo> = [
     id: "pk",
     university: {
       name: "education.pk.name",
-      logoSrc: "/img/education/pk.png",
+      logoSrc: "/assets/education/pk.png",
     },
     title: "education.pk.title",
     startDate: "month.sep",
@@ -17,7 +17,7 @@ export const educationData: Array<EducationInfo> = [
     id: "zse",
     university: {
       name: "education.zse.name",
-      logoSrc: "/img/education/zse.png",
+      logoSrc: "/assets/education/zse.png",
     },
     title: "education.zse.title",
     startDate: "month.sep",
