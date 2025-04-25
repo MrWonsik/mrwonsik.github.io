@@ -27,7 +27,7 @@ const Avatar = styled.img`
   width: 90%;
   height: 90%;
   border-radius: 50%;
-  border: ${(props) => `10px solid ${props.theme.textColor}`};
+  border: ${(props) => `10px solid ${props.theme.accentColor}`};
 `;
 
 const FieldsContainer = styled.div`
@@ -48,6 +48,7 @@ const Field = styled.p`
 const FieldJobRole = styled(Field)`
   font-size: 30px;
   font-weight: 700;
+  color: ${(props) => props.theme.accentColor};
 `;
 
 function PersonalCard() {

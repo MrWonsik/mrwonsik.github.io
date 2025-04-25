@@ -7,9 +7,28 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
       name: "Cornerstone OnDemand",
       logo: "/assets/companies/cornerstone.png",
     },
+    role: "Senior Software Engineer",
+    startDate: "month.jan",
+    startYear: "2025",
+    responsibilities: [
+      "employmenthistory.cornerstone.seniorsoftwareengineer.resp1",
+      "employmenthistory.cornerstone.seniorsoftwareengineer.resp2",
+      "employmenthistory.cornerstone.seniorsoftwareengineer.resp3",
+      "employmenthistory.cornerstone.seniorsoftwareengineer.resp4",
+      "employmenthistory.cornerstone.seniorsoftwareengineer.resp5",
+    ],
+  },
+  {
+    id: 2,
+    company: {
+      name: "Cornerstone OnDemand",
+      logo: "/assets/companies/cornerstone.png",
+    },
     role: "Software Engineer",
     startDate: "month.mar",
     startYear: "2022",
+    endDate: "month.jan",
+    endYear: "2025",
     responsibilities: [
       "employmenthistory.cornerstone.softwareengineer.resp1",
       "employmenthistory.cornerstone.softwareengineer.resp2",
@@ -19,7 +38,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: {
       name: "Cornerstone OnDemand",
       logo: "/assets/companies/cornerstone.png",
@@ -38,7 +57,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: {
       name: "Saba Software",
       logo: "/assets/companies/saba.png",
@@ -57,7 +76,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     company: {
       name: "i2B IT to Business Solutions",
       logo: "/assets/companies/i2b.png",

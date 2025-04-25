@@ -2,10 +2,25 @@ import { CourseInfo } from "./CourseInfo";
 
 export const data: Array<CourseInfo> = [
   {
+    id: "ANF",
+    course: {
+      logoSrc: "/assets/courses/anf.webp",
+      url: "https://architekturanafroncie.pl",
+      name: "Architektura Na Froncie"
+    },
+    author: {
+      name: "Tomasz Ducin",
+    },
+    platform: {
+      logoSrc: "/assets/courses/devstyle.png",
+    },
+  },
+  {
     id: "DD",
     course: {
       logoSrc: "/assets/courses/dd.png",
       url: "https://domaindrivers.pl",
+      name: "Domain Drivers"
     },
     author: {
       name: "Sławomir Sobótka, Jakub Pilomon",
@@ -13,14 +28,17 @@ export const data: Array<CourseInfo> = [
     platform: {
       logoSrc: "/assets/courses/devstyle.png",
     },
-    dateOfCompletion: "month.sep",
-    yearOfCompletion: "2024",
+    completionDate: {
+      month: "month.sep",
+      year: "2024"
+    },
   },
   {
     id: "DNA",
     course: {
       logoSrc: "/assets/courses/dna.png",
       url: "https://droganowoczesnegoarchitekta.pl",
+      name: "Droga Nowoczesnego Architekta"
     },
     author: {
       name: "Jakub Pilomon, Mateusz Gil, Sławomir Sobótka",
@@ -28,14 +46,17 @@ export const data: Array<CourseInfo> = [
     platform: {
       logoSrc: "/assets/courses/devstyle.png",
     },
-    dateOfCompletion: "month.feb",
-    yearOfCompletion: "2024"
+    completionDate:{
+      month: "month.feb",
+      year: "2024"
+    }
   },
   {
     id: "LF",
     course: {
       logoSrc: "/assets/courses/LegacyFighter.png",
       url: "https://legacyfighter.pl",
+      name: "Legacy Fighter"
     },
     author: {
       name: "Jakub Pilomon, Łukasz Szydło, Jakub Kubryński",
@@ -43,8 +64,10 @@ export const data: Array<CourseInfo> = [
     platform: {
       logoSrc: "/assets/courses/devstyle.png",
     },
-    dateOfCompletion: "month.apr",
-    yearOfCompletion: "2023",
+    completionDate:{
+      month: "month.apr",
+      year: "2023"
+    },
   },
   {
     id: "TSinReact",
@@ -57,8 +80,10 @@ export const data: Array<CourseInfo> = [
     platform: {
       logoSrc: "/assets/courses/altkomakademia.png",
     },
-    dateOfCompletion: "month.oct",
-    yearOfCompletion: "2022",
+    completionDate: {
+      month: "month.oct",
+      year: "2022"
+    },
   },
   {
     id: "OracleJava",
@@ -72,8 +97,10 @@ export const data: Array<CourseInfo> = [
     platform: {
       logoSrc: "/assets/courses/altkomakademia.png",
     },
-    dateOfCompletion: "month.feb",
-    yearOfCompletion: "2022",
+    completionDate:{
+      month: "month.feb",
+      year: "2022"
+    },
   },
   {
     id: "TSwithReact",
@@ -87,8 +114,10 @@ export const data: Array<CourseInfo> = [
     platform: {
       logoSrc: "/assets/courses/udemy.png",
     },
-    dateOfCompletion: "month.jan",
-    yearOfCompletion: "2022",
+    completionDate:{
+      month: "month.jan",
+      year: "2022"
+    },
   },
   {
     id: "ModernProjectsReact",
@@ -102,8 +131,10 @@ export const data: Array<CourseInfo> = [
     platform: {
       logoSrc: "/assets/courses/linkedinlearning.png",
     },
-    dateOfCompletion: "month.feb",
-    yearOfCompletion: "2021",
+    completionDate:{
+      month: "month.feb",
+      year: "2021"
+    },
   },
   {
     id: "solid",
@@ -117,8 +148,10 @@ export const data: Array<CourseInfo> = [
     platform: {
       logoSrc: "/assets/courses/udemy.png",
     },
-    dateOfCompletion: "month.oct",
-    yearOfCompletion: "2022",
+    completionDate:{
+      month: "month.oct",
+      year: "2022"
+    },
   },
   {
     id: "ReactHooks",
@@ -132,7 +165,9 @@ export const data: Array<CourseInfo> = [
     platform: {
       logoSrc: "/assets/courses/linkedinlearning.png",
     },
-    dateOfCompletion: "month.feb",
-    yearOfCompletion: "2021"
+    completionDate: {
+      month: "month.feb",
+      year: "2021"
+    }
   },
 ];

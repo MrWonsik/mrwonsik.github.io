@@ -35,12 +35,12 @@ function EmploymentHistoryCard({
         alt: "comapnyLogo",
       }}
       fields={[
-        <BoldedParagraph key="companyName">
+        <ItalicParagraph key="companyName">
           {employmentHistory.company.name}
-        </BoldedParagraph>,
-        <ItalicParagraph key="companyRole">
-          {employmentHistory.role}
         </ItalicParagraph>,
+        <BoldedParagraph key="companyRole">
+          {employmentHistory.role}
+        </BoldedParagraph>,
       ]}
       period={{
         startDate: `${t(employmentHistory.startDate)} ${employmentHistory.startYear}`,

@@ -3,20 +3,30 @@ import { useTranslation } from "react-i18next";
 import { CourseInfo } from "./CourseInfo";
 import styled from "styled-components";
 
-const CourseCardContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  max-width: 350px;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: ${(props) => (` 
-    ${props.theme.accentColor}66 -5px 5px,
-    ${props.theme.accentColor}4D -10px 10px,
-    ${props.theme.accentColor}33 -15px 15px,
-    ${props.theme.accentColor}1A -20px 20px,
-    ${props.theme.accentColor}0D -25px 25px;
-  `)}
+const CourseCardContainer = styled.a`
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: ${(props) => props.theme.backgroundColor || '#fff'};
+    box-shadow: ${(props) => `
+      0 4px 8px rgba(0, 0, 0, 0.1),
+      0 8px 16px rgba(0, 0, 0, 0.15);
+    `};
+    border: 1px solid ${(props) => props.theme.borderColor || '#ddd'};
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: ${(props) => `
+          0 10px 20px rgba(0, 0, 0, 0.2),
+          0 15px 30px rgba(0, 0, 0, 0.25);
+        `};
+        cursor: pointer;
+    }
 `;
 
 const CourseCardSection = styled.div`
@@ -35,9 +45,10 @@ const CourseCardUrlContainer = styled.div`
 const CourseCardImgContainer = styled.div`
   max-width: 300px;
   max-height: 300px;
+  margin-bottom: 20px;
   align-self: center;
   & img {
-    max-width: 300px;
+    max-width: 250px;
     max-height: 300px;
   }
 `;
@@ -62,7 +73,6 @@ const CourseCardValue = styled.span`
 
 const CourseCardUrl = styled.a`
   color: #171741;
-  cursor: pointer;
 
   &:hover {
     color: blue;
@@ -72,7 +82,7 @@ const CourseCardUrl = styled.a`
 function CourseCard({ courseCard }: { courseCard: CourseInfo }) {
   const { t } = useTranslation();
   return (
-    <CourseCardContainer>
+    <CourseCardContainer href={courseCard.course.url} target="_blank">
       {courseCard.course.logoSrc && (
         <CourseCardImgContainer>
           <img src={courseCard.course.logoSrc} alt="course logo" />
@@ -108,7 +118,13 @@ function CourseCard({ courseCard }: { courseCard: CourseInfo }) {
       )}
       <CourseCardSection>
         <CourseCardLabel>{t("courses.dateOfCompletionLabel")}:</CourseCardLabel>
-        <CourseCardValue>{`${t(courseCard.dateOfCompletion)} ${courseCard.yearOfCompletion}`}</CourseCardValue>
+        <CourseCardValue>
+          {
+            courseCard.completionDate
+              ? `${t(courseCard.completionDate.month)} ${courseCard.completionDate.year}`
+              : t("courses.inProgress")
+          }
+        </CourseCardValue>
       </CourseCardSection>
       {courseCard?.course?.url && (
         <CourseCardUrlContainer>

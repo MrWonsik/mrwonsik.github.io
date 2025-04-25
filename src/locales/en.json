@@ -27,8 +27,6 @@
     "firstParagraph": "Since 2020, I've been professionally programming in Java (Spring) and JavaScript/TypeScript (React)."
   },
   "skills": {
-    "strengthsSubheader": "Strengths",
-    "certificationsSubheader": "Training Completed",
     "technologiesSubheader": "Learned Technologies",
     "strengths": {
       "webApplicationDeveloper": {
@@ -50,19 +48,31 @@
       "architectureEnthusiast": {
         "header": "Architecture Enthusiast",
         "description": "I am passionate about computer system architecture and I aim to delve into the intricacies of software design, creating scalable, efficient, and flexible systems using Domain-Driven Design (DDD) practices."
+      },
+      "programingPassion": {
+        "header": "Programming devotee",
+        "description": "Programming is not just a profession for me, but a passion that engages my mind and provides constant challenges. I find beauty in the simplicity of code and satisfaction in solving problems."
       }
     }
   },
   "courses": {
     "courseNameLabel": "Course",
-    "authorNameLabel": "Author/s",
+    "authorNameLabel": "Authors",
     "platformNameLabel": "Platform",
     "dateOfCompletionLabel": "Date of completion",
-    "courseDetails": "Course details"
+    "courseDetails": "Course details",
+    "inProgress": "In progress"
   },
   "employmenthistory": {
     "current": "current",
     "cornerstone": {
+      "seniorsoftwareengineer": {
+        "resp1": "Designing, developing, and maintaining web applications with full responsibility for both backend and frontend.",
+        "resp2": "Creating new features, refactoring code, and ensuring high-quality solutions throughout the application's lifecycle.",
+        "resp3": "Collaborating with the product team and stakeholders to improve the application, its functionalities, and provide an optimal user experience.",
+        "resp4": "Supporting the product team with technical and client-oriented ideas, delivering solutions that align with business goals.",
+        "resp5": "Mentoring and supporting junior team members, helping them develop their skills, and implementing best programming practices."
+      },
       "softwareengineer": {
         "resp1": "Designing, developing, and maintaining the TalentLink application supporting the recruitment process.",
         "resp2": "Full responsibility for both the frontend and backend parts of the application.",

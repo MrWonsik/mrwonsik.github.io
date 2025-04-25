@@ -14,7 +14,7 @@ const NavigationContainer = styled.nav`
 `;
 
 const NavigationLinkContainer = styled.div`
-  padding: 10px;
+  padding: 20px;
 `;
 
 const NavigationLink = styled.a`

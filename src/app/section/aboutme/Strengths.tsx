@@ -6,6 +6,7 @@ import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { GiBroom } from "react-icons/gi";
 import { GiNinjaHead } from "react-icons/gi";
 import { SiBlueprint } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 import {
   BoldedParagraph,
   JustifiedParagraph,
@@ -67,6 +68,11 @@ function Strengths() {
       header: t("skills.strengths.architectureEnthusiast.header"),
       description: t("skills.strengths.architectureEnthusiast.description"),
     },
+    {
+      icon: <FaJava />,
+      header: t("skills.strengths.programingPassion.header"),
+      description: t("skills.strengths.programingPassion.description")
+    }
   ];
 
   return (

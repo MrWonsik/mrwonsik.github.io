@@ -76,12 +76,12 @@ function EducationCard({ educationInfo }: { educationInfo: EducationInfo }) {
         alt: "universityLogo",
       }}
       fields={[
-        <BoldedParagraph key="companyName">
+        <ItalicParagraph key="companyName">
           {educationInfo.university.name && t(educationInfo.university.name)}
-        </BoldedParagraph>,
-        <ItalicParagraph key="companyRole">
-          {t(educationInfo.title)}
         </ItalicParagraph>,
+        <BoldedParagraph key="companyRole">
+          {t(educationInfo.title)}
+        </BoldedParagraph>,
       ]}
       period={{
         startDate: `${t(educationInfo.startDate)} ${educationInfo.startYear}`,

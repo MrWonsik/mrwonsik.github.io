@@ -2,7 +2,7 @@
   "app": {
     "fieldJobRole": "Inżynier Oprogramowania",
     "aboutMeHeader": "O mnie",
-    "coursesHeader": "Odbyte szkolenia i kursy",
+    "coursesHeader": "Szkolenia i kursy",
     "employmentHistoryHeader": "Historia zatrudnienia",
     "educationHeader": "Edukacja",
     "portfolioHeader": "Portfolio",
@@ -27,8 +27,6 @@
     "firstParagraph": "Od 2020 roku profesjonalnie programuję w Java (Spring) i JavaScript/TypeScript (React)."
   },
   "skills": {
-    "strengthsSubheader": "Mocne strony",
-    "certificationsSubheader": "Odbyte szkolenia",
     "technologiesSubheader": "Poznane technologie",
     "strengths": {
       "webApplicationDeveloper": {
@@ -50,19 +48,31 @@
       "architectureEnthusiast": {
         "header": "Entuzjasta Architektury",
         "description": "Jestem pasjonatem architektury systemów informatycznych, chcę zgłębiać tajniki projektowania oprogramowania i tworzyć skalowalne, wydajne i elastyczne systemy z wykorzystaniem praktyk Domain-Driven Design (DDD)."
+      },
+      "programingPassion": {
+        "header": "Pasjonat programowania",
+        "description": "Programowanie to dla mnie nie tylko zawód, ale pasja, która angażuje umysł i pozwala na ciągłe wyzwania. Szukam piękna w prostocie kodu i satysfakcji z rozwiązywania problemów"
       }
     }
   },
   "courses": {
     "courseNameLabel": "Szkolenie",
-    "authorNameLabel": "Autor/Autorzy",
+    "authorNameLabel": "Autorzy",
     "platformNameLabel": "Platforma",
     "dateOfCompletionLabel": "Data ukończenia",
-    "courseDetails": "Szczegóły szkolenia"
+    "courseDetails": "Szczegóły szkolenia",
+    "inProgress": "W trakcie"
   },
   "employmenthistory": {
     "current": "obecnie",
     "cornerstone": {
+      "seniorsoftwareengineer": {
+        "resp1": "Projektowanie, rozwijanie i utrzymywanie aplikacji webowych z pełną odpowiedzialnością za backend i frontend.",
+        "resp2": "Tworzenie nowych funkcjonalności, refaktoryzacja kodu oraz dbanie o wysoką jakość rozwiązań przez cały cykl życia aplikacji.",
+        "resp3": "Współpraca z zespołem produktu oraz interesariuszami w celu doskonalenia aplikacji, jej funkcjonalności oraz zapewnienia optymalnego doświadczenia użytkowników.",
+        "resp4": "Wspomaganie zespołu produktowego w pomysłach technicznych i klienckich, dostarczanie rozwiązań wspierających cele biznesowe.",
+        "resp5": "Mentoring i wsparcie młodszych członków zespołu, pomaganie w rozwoju ich umiejętności oraz wdrażanie najlepszych praktyk programistycznych."
+      },
       "softwareengineer": {
         "resp1": "Projektowanie, rozwijanie i utrzymywanie aplikacji TalentLink wspierającej proces rekrutacji.",
         "resp2": "Pełna odpowiedzialność za zarówno część frontendową, jak i backendową aplikacji.",
