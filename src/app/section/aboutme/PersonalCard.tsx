@@ -33,7 +33,7 @@ const Avatar = styled.img`
 const FieldsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 700px;
   align-items: baseline;
   @media ${device.mobile} {
     align-items: center;

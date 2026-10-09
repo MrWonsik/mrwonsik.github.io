@@ -53,7 +53,6 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
       "employmenthistory.cornerstone.juniorsoftwareengineer.resp2",
       "employmenthistory.cornerstone.juniorsoftwareengineer.resp3",
       "employmenthistory.cornerstone.juniorsoftwareengineer.resp4",
-      "employmenthistory.cornerstone.juniorsoftwareengineer.resp5",
     ],
   },
   {

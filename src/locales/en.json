@@ -1,6 +1,6 @@
 {
   "app": {
-    "fieldJobRole": "Software Engineer",
+    "fieldJobRole": "Senior Software Engineer",
     "aboutMeHeader": "About me",
     "coursesHeader": "Completed Courses and trainings",
     "employmentHistoryHeader": "Employment history",
@@ -24,7 +24,7 @@
     "dec": "December"
   },
   "aboutMe": {
-    "firstParagraph": "Since 2020, I've been professionally programming in Java (Spring) and JavaScript/TypeScript (React)."
+    "firstParagraph": "Professionally coding since 2020. I bridge the gap between a robust backend (Java, Spring) and a modern frontend (React, TypeScript). I care about clean architecture, good design, and solid craftsmanship—no shortcuts or sloppy work."
   },
   "skills": {
     "technologiesSubheader": "Learned Technologies",
@@ -67,46 +67,45 @@
     "current": "current",
     "cornerstone": {
       "seniorsoftwareengineer": {
-        "resp1": "Designing, developing, and maintaining web applications with full responsibility for both backend and frontend.",
-        "resp2": "Creating new features, refactoring code, and ensuring high-quality solutions throughout the application's lifecycle.",
-        "resp3": "Collaborating with the product team and stakeholders to improve the application, its functionalities, and provide an optimal user experience.",
-        "resp4": "Supporting the product team with technical and client-oriented ideas, delivering solutions that align with business goals.",
-        "resp5": "Mentoring and supporting junior team members, helping them develop their skills, and implementing best programming practices."
+        "resp1": "Designing, developing, and maintaining web applications with end-to-end ownership of both backend and frontend layers.",
+        "resp2": "Designing and implementing a public RESTful API (HATEOAS) for external integrations, including MCP integration to enable seamless data exchange with AI agents.",
+        "resp3": "Architectural refactoring using the Ports & Adapters pattern, enabling consistent domain logic to be safely and flexibly exposed through both the public API and the UI.",
+        "resp4": "Providing technical leadership and product support by delivering solutions aligned with core business objectives.",
+        "resp5": "Mentoring team members, driving engineering best practices, and maintaining high standards of code quality."
       },
       "softwareengineer": {
-        "resp1": "Designing, developing, and maintaining the TalentLink application supporting the recruitment process.",
-        "resp2": "Full responsibility for both the frontend and backend parts of the application.",
-        "resp3": "Collaborating with the team to improve the 'candidate facing' system area and rewriting part of the system related to career pages.",
-        "resp4": "Utilizing CI/CD tools to ensure continuity, quality, and efficiency in the development process.",
-        "resp5": "Actively participating in UI design and collaborating with the product team and UX team."
+        "resp1": "Key role in replacing a legacy ColdFusion system with a modern React module, empowering clients to build and manage customizable career sites and branding.",
+        "resp2": "Gradual codebase migration from JavaScript to TypeScript (TSX) alongside systematic technical debt reduction following Clean Code principles.",
+        "resp3": "Close collaboration with the UX team to build a reusable component library and ensure visual and functional consistency across the application.",
+        "resp4": "Designing, developing, and maintaining core TalentLink modules supporting recruitment workflows (Full-stack: Java, React).",
+        "resp5": "Maintaining and optimizing CI/CD pipelines to ensure release stability and high software quality."
       },
       "juniorsoftwareengineer": {
-        "resp1": "Actively participating in designing and developing the TalentLink application, supporting the recruitment process.",
-        "resp2": "Responsibility for both the frontend and backend parts of the application.",
-        "resp3": "Collaborating with the team to improve the 'candidate facing' system area and rewriting part of the system related to career pages.",
-        "resp4": "Experience in ensuring website compliance with WCAG standards, ensuring accessibility and usability for users with various needs.",
-        "resp5": "Active participation in team meetings regarding project planning and application development strategies."
+        "resp1": "Adapting public application forms and candidate-facing views to meet rigorous international digital accessibility standards (WCAG).",
+        "resp2": "Full-stack development and maintenance of the TalentLink application, with a strong focus on candidate-facing modules.",
+        "resp3": "Designing and optimizing the candidate application journey in close collaboration with the product team.",
+        "resp4": "Active participation in architectural planning, task estimation, and defining application roadmap strategies within agile workflows."
       },
       "internsoftwaredeveloper": {
-        "resp1": "Applying skills acquired during studies to practical software development.",
-        "resp2": "Active usage of Java and React for application development, and utilizing Git version control system.",
-        "resp3": "Understanding synchronous communication in REST architecture and writing unit tests.",
-        "resp4": "Participating in teamwork following Agile methodology and using Atlassian software for project management.",
-        "resp5": "Developing analytical skills and problem-solving abilities through practical projects."
+        "resp1": "Applying academic foundations to practical, commercial software development.",
+        "resp2": "Leveraging Java and React for application development while utilizing Git version control.",
+        "resp3": "Implementing synchronous communication patterns in REST architectures and writing unit tests.",
+        "resp4": "Collaborating in Agile team environments using Atlassian project management tools.",
+        "resp5": "Developing analytical thinking and problem-solving skills through hands-on technical projects."
       }
     },
     "i2b": {
       "itspecialist": {
-        "resp1": "Managed both Linux and Windows environments.",
-        "resp2": "Oversaw the call center software, including the Hermes system, and its MSSQL database.",
-        "resp3": "Managed network and teleinformatics infrastructure.",
-        "resp4": "Created and administered domains using tools like Samba and QNAP NAS server.",
-        "resp5": "Developed scripts tailored to client needs, particularly focusing on call center solutions.",
-        "resp6": "Supervised access security to resources and managed user groups.",
-        "resp7": "Implemented and maintained the ESET antivirus system.",
-        "resp8": "Managed and monitored the Fortigate network firewall.",
-        "resp9": "Utilized programming languages such as PHP and Bash to automate repetitive tasks.",
-        "resp10": "Developed tools to streamline daily work processes for clients."
+        "resp1": "Managing Linux and Windows server environments.",
+        "resp2": "Overseeing call center software, including the Hermes system and its MSSQL database.",
+        "resp3": "Managing network and telecommunication infrastructure.",
+        "resp4": "Creating and administering domains using Samba tools and QNAP NAS servers.",
+        "resp5": "Developing custom scripts tailored to specific client and operational requirements.",
+        "resp6": "Supervising resource access security and managing user privilege groups.",
+        "resp7": "Implementing and maintaining ESET security solutions.",
+        "resp8": "Configuring, managing, and monitoring Fortigate firewalls.",
+        "resp9": "Utilizing PHP and Bash scripting to automate repetitive operational tasks.",
+        "resp10": "Building internal tools to streamline daily workflow processes."
       }
     }
   },

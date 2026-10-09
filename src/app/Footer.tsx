@@ -17,7 +17,7 @@ function Footer() {
 
   return (
     <FooterContainer>
-      <p>© 2025 Tomasz Wąsacz. {t("app.allRightsReserved")}</p>
+      <p>© 2026 Tomasz Wąsacz. {t("app.allRightsReserved")}</p>
     </FooterContainer>
   );
 }
