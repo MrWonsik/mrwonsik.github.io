@@ -4,4 +4,5 @@ export interface SectionDefinition {
   displayHeader: boolean;
   component: JSX.Element;
   icon: JSX.Element;
+  visibleOnNav: boolean;
 }

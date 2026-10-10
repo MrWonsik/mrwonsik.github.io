@@ -1,32 +1,84 @@
 import React from "react";
 import { EducationInfo } from "./EducationInfo";
-import {
-  BoldedParagraph,
-  ItalicParagraph,
-  JustifiedParagraph,
-} from "../../ParagraphsAndHeaders";
-import HorizontalCard from "../HorizontalCard";
-import { Trans, useTranslation } from "react-i18next";
+import HorizontalCard from "../../components/HorizontalCard";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
+import { AppTranslation } from "../../components/AppTranslation";
 
 const DescriptionContainer = styled.div`
-  margin: 30px 0;
-  display: block;
-  text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+`;
+
+const EducationParagraph = styled.p`
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  color: ${(props) => props.theme.textColor};
+  opacity: 0.9;
+`;
+
+const QualList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
+
+const QualItem = styled.li`
+  position: relative;
+  padding-left: 24px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: ${(props) => props.theme.textColor};
+  opacity: 0.95;
+
+  &::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    color: ${(props) => props.theme.accentColor};
+    font-size: 21px;
+    font-weight: bold;
+  }
+
+  strong {
+    color: ${(props) => props.theme.accentColor};
+    font-weight: 700;
+  }
+`;
+
+const UniversityName = styled.span`
+  font-style: italic;
+  font-size: 22px;
+  color: ${(props) => props.theme.textColor};
+  opacity: 0.85;
+`;
+
+const DegreeTitle = styled.h3`
+  font-size: 25px;
+  font-weight: 700;
+  margin: 4px 0 0 0;
+  color: ${(props) => props.theme.accentColor};
 `;
 
 const PKDescription = () => {
   return (
     <DescriptionContainer>
-      <JustifiedParagraph>
-        <Trans i18nKey={"education.pk.description.paragraph1"} />
-      </JustifiedParagraph>
-      <JustifiedParagraph>
-        <Trans i18nKey={"education.pk.description.paragraph2"} />
-      </JustifiedParagraph>
-      <JustifiedParagraph>
-        <Trans i18nKey={"education.pk.description.paragraph3"} />
-      </JustifiedParagraph>
+      <EducationParagraph>
+        <AppTranslation translationKey={"education.pk.description.paragraph1"} />
+      </EducationParagraph>
+      <EducationParagraph>
+        <AppTranslation translationKey={"education.pk.description.paragraph2"} />
+      </EducationParagraph>
+      <EducationParagraph>
+        <AppTranslation translationKey={"education.pk.description.paragraph3"} />
+      </EducationParagraph>
     </DescriptionContainer>
   );
 };
@@ -36,21 +88,25 @@ const ZSEDescription = () => {
 
   return (
     <DescriptionContainer>
-      <JustifiedParagraph>
-        {t("education.zse.description.paragraph1")}
-      </JustifiedParagraph>
-      <p>
-        <strong>E12</strong> - {t("education.zse.description.e12")}
-      </p>
-      <p>
-        <strong>E13</strong> - {t("education.zse.description.e13")}
-      </p>
-      <p>
-        <strong>E14</strong> - {t("education.zse.description.e14")}
-      </p>
-      <JustifiedParagraph>
-        <Trans i18nKey={"education.zse.description.paragraph2"} />
-      </JustifiedParagraph>
+      <EducationParagraph>
+        <AppTranslation translationKey={"education.zse.description.paragraph1"} />
+      </EducationParagraph>
+
+      <QualList>
+        <QualItem>
+          <strong>E12:</strong> {t("education.zse.description.e12")}
+        </QualItem>
+        <QualItem>
+          <strong>E13:</strong> {t("education.zse.description.e13")}
+        </QualItem>
+        <QualItem>
+          <strong>E14:</strong> {t("education.zse.description.e14")}
+        </QualItem>
+      </QualList>
+
+      <EducationParagraph>
+        <AppTranslation translationKey={"education.zse.description.paragraph2"} />
+      </EducationParagraph>
     </DescriptionContainer>
   );
 };
@@ -73,15 +129,15 @@ function EducationCard({ educationInfo }: { educationInfo: EducationInfo }) {
     <HorizontalCard
       logo={{
         src: educationInfo.university.logoSrc,
-        alt: "universityLogo",
+        alt: educationInfo.university.name || "universityLogo",
       }}
       fields={[
-        <ItalicParagraph key="companyName">
+        <UniversityName key="universityName">
           {educationInfo.university.name && t(educationInfo.university.name)}
-        </ItalicParagraph>,
-        <BoldedParagraph key="companyRole">
+        </UniversityName>,
+        <DegreeTitle key="degreeTitle">
           {t(educationInfo.title)}
-        </BoldedParagraph>,
+        </DegreeTitle>,
       ]}
       period={{
         startDate: `${t(educationInfo.startDate)} ${educationInfo.startYear}`,

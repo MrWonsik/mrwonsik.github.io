@@ -6,6 +6,7 @@ const FooterContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 18px;
   margin: 30px 0;
   & p {
     margin: 5px;

@@ -6,6 +6,7 @@ export const SvgContainer = styled.div`
   align-items: center;
   flex-flow: wrap;
   padding: 25px 0;
+  filter: drop-shadow(0px 0px 150px ${(props) => `${props.theme.accentColor}`});
 `;
 
 export const Svg = styled.img`

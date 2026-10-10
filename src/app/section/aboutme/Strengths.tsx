@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { useTranslation } from "react-i18next";
 import { TbWorldWww } from "react-icons/tb";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { GiBroom } from "react-icons/gi";
@@ -10,8 +9,9 @@ import { FaJava } from "react-icons/fa";
 import {
   BoldedParagraph,
   JustifiedParagraph,
-} from "../../ParagraphsAndHeaders";
+} from "../../components/ParagraphsAndHeaders";
 import { device } from "../../../const";
+import { AppTranslation } from "../../components/AppTranslation";
 
 const StrengthsGrid = styled.div`
   display: flex;
@@ -33,53 +33,59 @@ const StrengthBlock = styled.div`
 
 const StrengthIconContainer = styled.div`
   font-size: 80px;
+  color: ${(props) => props.theme.accentColor};
 `;
 
 const StrengthHeader = styled(BoldedParagraph)`
   margin: 10px;
+  color: ${(props) => props.theme.accentColor};
 `;
 
 function Strengths() {
-  const { t } = useTranslation();
-
   const strengthsCards = [
     {
+      key: "webApplicationDeveloper",
       icon: <TbWorldWww />,
-      header: t("skills.strengths.webApplicationDeveloper.header"),
-      description: t("skills.strengths.webApplicationDeveloper.description"),
+      header: <AppTranslation translationKey="skills.strengths.webApplicationDeveloper.header" />,
+      description: <AppTranslation translationKey="skills.strengths.webApplicationDeveloper.description" />,
     },
     {
+      key: "cleanCodePractitioner",
       icon: <GiBroom />,
-      header: t("skills.strengths.cleanCodePractitioner.header"),
-      description: t("skills.strengths.cleanCodePractitioner.description"),
+      header: <AppTranslation translationKey="skills.strengths.cleanCodePractitioner.header" />,
+      description: <AppTranslation translationKey="skills.strengths.cleanCodePractitioner.description" />,
     },
     {
+      key: "refactoringNinja",
       icon: <GiNinjaHead />,
-      header: t("skills.strengths.refactoringNinja.header"),
-      description: t("skills.strengths.refactoringNinja.description"),
+      header: <AppTranslation translationKey="skills.strengths.refactoringNinja.header" />,
+      description: <AppTranslation translationKey="skills.strengths.refactoringNinja.description" />,
     },
     {
+      key: "qualityDrivenDeveloper",
       icon: <IoShieldCheckmarkSharp />,
-      header: t("skills.strengths.qualityDrivenDeveloper.header"),
-      description: t("skills.strengths.qualityDrivenDeveloper.description"),
+      header: <AppTranslation translationKey="skills.strengths.qualityDrivenDeveloper.header" />,
+      description: <AppTranslation translationKey="skills.strengths.qualityDrivenDeveloper.description" />,
     },
     {
+      key: "architectureEnthusiast",
       icon: <SiBlueprint />,
-      header: t("skills.strengths.architectureEnthusiast.header"),
-      description: t("skills.strengths.architectureEnthusiast.description"),
+      header: <AppTranslation translationKey="skills.strengths.architectureEnthusiast.header" />,
+      description: <AppTranslation translationKey="skills.strengths.architectureEnthusiast.description" />,
     },
     {
+      key: "programmingPassion",
       icon: <FaJava />,
-      header: t("skills.strengths.programingPassion.header"),
-      description: t("skills.strengths.programingPassion.description")
-    }
+      header: <AppTranslation translationKey="skills.strengths.programingPassion.header" />,
+      description: <AppTranslation translationKey="skills.strengths.programingPassion.description" />,
+    },
   ];
 
   return (
     <StrengthsGrid>
       {strengthsCards.map((strengthCard) => {
         return (
-          <StrengthBlock key={strengthCard.header}>
+          <StrengthBlock key={strengthCard.key}>
             <StrengthIconContainer>{strengthCard.icon}</StrengthIconContainer>
             <StrengthHeader>{strengthCard.header}</StrengthHeader>
             <JustifiedParagraph>{strengthCard.description}</JustifiedParagraph>

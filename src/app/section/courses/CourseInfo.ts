@@ -13,7 +13,7 @@ export interface CourseInfo {
     name?: string;
     logoSrc?: string;
   };
-  completionDate?: {
+  completionDate: {
     month: string,
     year: string,
   }

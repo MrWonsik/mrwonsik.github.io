@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BoldedParagraph, ItalicParagraph } from "./ParagraphsAndHeaders";
+import { BoldedParagraph, ItalicParagraph } from "../../components/ParagraphsAndHeaders";
 
 const QuoteBoxContainer = styled.div`
   display: flex;

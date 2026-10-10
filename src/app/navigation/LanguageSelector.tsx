@@ -9,12 +9,12 @@ const FlagSvg = styled.svg`
 `;
 
 const LanguageButton = styled.button<{ selected: boolean }>`
+  cursor: pointer;
   background: none;
   border: none;
   padding: 10px;
   filter: ${(props) => (props.selected ? "none" : "grayscale(1)")};
   &:hover {
-    cursor: pointer;
     filter: brightness(1);
   }
 `;

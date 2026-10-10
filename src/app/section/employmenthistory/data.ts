@@ -5,7 +5,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     id: 1,
     company: {
       name: "Cornerstone OnDemand",
-      logo: "/assets/companies/cornerstone.png",
+      logo: "/assets/companies/cornerstone2.png",
     },
     role: "Senior Software Engineer",
     startDate: "month.jan",
@@ -22,7 +22,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     id: 2,
     company: {
       name: "Cornerstone OnDemand",
-      logo: "/assets/companies/cornerstone.png",
+      logo: "/assets/companies/cornerstone2.png",
     },
     role: "Software Engineer",
     startDate: "month.mar",
@@ -41,7 +41,7 @@ export const employmentHistoryData: Array<EmploymentHistoryInfo> = [
     id: 3,
     company: {
       name: "Cornerstone OnDemand",
-      logo: "/assets/companies/cornerstone.png",
+      logo: "/assets/companies/cornerstone2.png",
     },
     role: "Junior Software Engineer",
     startDate: "month.sep",

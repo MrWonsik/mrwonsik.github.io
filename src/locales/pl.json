@@ -24,34 +24,34 @@
     "dec": "Grudzień"
   },
   "aboutMe": {
-    "firstParagraph": "Komercyjnie programuję od 2020 roku. Łączę solidny backend (Java, Spring) z nowoczesnym frontendem (React, TypeScript). Lubię dobrą architekturę, czysty kod i porządne rzemiosło – bez drogi na skróty i bylejakości."
+    "firstParagraph": "Komercyjnie programuję od 2020 roku. Łączę solidny backend (<Highlight>Java</Highlight>, <Highlight>Spring</Highlight>) z nowoczesnym frontendem (<Highlight>React</Highlight>, <Highlight>TypeScript</Highlight>). Lubię <Highlight>czystą architekturę</Highlight>, czysty kod i porządne rzemiosło – bez drogi na skróty i bylejakości."
   },
   "skills": {
     "technologiesSubheader": "Poznane technologie",
     "strengths": {
       "webApplicationDeveloper": {
         "header": "Programista aplikacji webowych",
-        "description": "Tworzę aplikacje internetowe, łącząc frontend i backend. Projektuję interfejsy użytkownika i implementuję logikę biznesową, dbając o interaktywność i responsywność. Mam doświadczenie z architekturami opartymi o komunikacje synchroniczną oraz asynchroniczną. "
+        "description": "Tworzę aplikacje internetowe, łącząc frontend i backend. Projektuję interfejsy użytkownika i implementuję logikę biznesową, dbając o interaktywność i responsywność. Mam doświadczenie z architekturami opartymi o <Highlight>komunikację synchroniczną oraz asynchroniczną</Highlight>."
       },
       "qualityDrivenDeveloper": {
         "header": "Programista dbający o jakość",
-        "description": "Aby zapewnić wysoką jakość kodu i ograniczać liczbę powstających błędów, dbam o to by, aplikacje były dobrze przetestowane za pomocą testów jednostkowych i integracyjnych. Dzięki temu podejściu, aplikacje przy których pracuje są mniej zawodne i łatwiejsze w utrzymaniu."
+        "description": "Aby zapewnić wysoką jakość kodu i ograniczać liczbę powstających błędów, dbam o to, by aplikacje były dobrze przetestowane za pomocą <Highlight>testów jednostkowych i integracyjnych</Highlight>. Dzięki temu podejściu aplikacje, przy których pracuję, są mniej zawodne i łatwiejsze w utrzymaniu."
       },
       "cleanCodePractitioner": {
         "header": "Fan czystego kodu",
-        "description": "Piszę czytelny i zrozumiały kod, stosując najlepsze praktyki programistyczne. W czasie swojej zawsze staram się kierować praktykami takimi jak: SOLID, KISS, DRY, YAGNI, a także wielu innym dobrym praktykom propagowanymi między innymi przez Wujka Boba (Bob Martin)."
+        "description": "Piszę czytelny i zrozumiały kod, stosując najlepsze praktyki programistyczne. W codziennej pracy zawsze staram się kierować zasadami takimi jak: <Highlight>SOLID, KISS, DRY, YAGNI</Highlight>, a także wieloma innymi dobrymi praktykami propagowanymi między innymi przez Wujka Boba (Bob Martin)."
       },
       "refactoringNinja": {
         "header": "Ninja Refaktoru",
-        "description": "Specjalizuję się w poprawianiu istniejącego kodu, usuwaniu zbędnych elementów i optymalizacji struktury, zapewniając jego czytelność i wydajność. Zgodnie z teorią rozbitych szyb, staram się zapobiegać \"wybitym oknom\"."
+        "description": "Specjalizuję się w poprawianiu istniejącego kodu, usuwaniu zbędnych elementów i optymalizacji struktury, zapewniając jego czytelność i wydajność. Zgodnie z teorią rozbitych szyb, staram się zapobiegać <Highlight>\"wybitym oknom\"</Highlight>."
       },
       "architectureEnthusiast": {
         "header": "Entuzjasta Architektury",
-        "description": "Jestem pasjonatem architektury systemów informatycznych, chcę zgłębiać tajniki projektowania oprogramowania i tworzyć skalowalne, wydajne i elastyczne systemy z wykorzystaniem praktyk Domain-Driven Design (DDD)."
+        "description": "Jestem pasjonatem architektury systemów informatycznych, chcę zgłębiać tajniki projektowania oprogramowania i tworzyć skalowalne, wydajne i elastyczne systemy z wykorzystaniem praktyk <Highlight>Domain-Driven Design (DDD)</Highlight>."
       },
       "programingPassion": {
         "header": "Pasjonat programowania",
-        "description": "Programowanie to dla mnie nie tylko zawód, ale pasja, która angażuje umysł i pozwala na ciągłe wyzwania. Szukam piękna w prostocie kodu i satysfakcji z rozwiązywania problemów"
+        "description": "Programowanie to dla mnie nie tylko zawód, ale pasja, która angażuje umysł i pozwala na ciągłe wyzwania. Szukam piękna w prostocie kodu i satysfakcji z rozwiązywania problemów."
       }
     }
   },
@@ -67,44 +67,44 @@
     "current": "obecnie",
     "cornerstone": {
       "seniorsoftwareengineer": {
-        "resp1": "Projektowanie, rozwój i utrzymanie aplikacji webowych z pełną odpowiedzialnością za warstwę backendową i frontendową.",
-        "resp2": "Projektowanie i wdrożenie publicznego RESTful API (HATEOAS) do integracji zewnętrznych oraz implementacja mechanizmów MCP umożliwiających płynną wymianę danych z agentami AI.",
-        "resp3": "Przebudowa architektoniczna w oparciu o wzorzec Ports & Adapters, umożliwiająca bezpieczne i elastyczne udostępnianie spójnej logiki domenowej przez API publiczne oraz interfejs użytkownika.",
-        "resp4": "Wsparcie techniczne zespołu produktowego oraz doradztwo architektoniczne przy dostarczaniu rozwiązań odpowiadających na cele biznesowe.",
-        "resp5": "Mentoring i wsparcie techniczne członków zespołu, wdrażanie dobrych praktyk inżynieryjnych oraz dbałość o jakość kodu."
+        "resp1": "Projektowanie, rozwój i utrzymanie aplikacji webowych z pełną odpowiedzialnością za warstwę <Highlight>backendową i frontendową</Highlight>.",
+        "resp2": "Projektowanie i wdrożenie publicznego <Highlight>RESTful API (HATEOAS)</Highlight> do integracji zewnętrznych oraz implementacja <Highlight>mechanizmów MCP</Highlight> umożliwiających płynną wymianę danych z agentami AI.",
+        "resp3": "Przebudowa architektoniczna w oparciu o wzorzec <Highlight>Ports & Adapters</Highlight>, umożliwiająca bezpieczne i elastyczne udostępnianie spójnej logiki domenowej przez API publiczne oraz interfejs użytkownika.",
+        "resp4": "Wsparcie techniczne zespołu produktowego oraz <Highlight>doradztwo architektoniczne</Highlight> przy dostarczaniu rozwiązań odpowiadających na cele biznesowe.",
+        "resp5": "Mentoring i wsparcie techniczne członków zespołu, wdrażanie <Highlight>dobrych praktyk inżynieryjnych</Highlight> oraz dbałość o jakość kodu."
       },
       "softwareengineer": {
-        "resp1": "Kluczowy udział w zastąpieniu przestarzałego systemu ColdFusion nowym modułem w React, umożliwiającym klientom elastyczne zarządzanie stronami karier i brandingiem.",
-        "resp2": "Sukcesywna migracja kodu z JavaScript do TypeScript (TSX) oraz systematyczna redukcja długu technologicznego zgodnie z zasadami Clean Code.",
-        "resp3": "Ścisła współpraca z zespołem UX przy tworzeniu biblioteki reużywalnych komponentów oraz zapewnieniu spójności wizualnej i funkcjonalnej aplikacji.",
-        "resp4": "Projektowanie, rozwój i utrzymanie modułów systemu TalentLink wspierającego procesy rekrutacyjne (Full-stack: Java, React).",
-        "resp5": "Utrzymanie i optymalizacja procesów CI/CD w celu zapewnienia stabilności wydań oraz wysokiej jakości kodu."
+        "resp1": "Kluczowy udział w zastąpieniu przestarzałego systemu <Highlight>ColdFusion</Highlight> nowym modułem w <Highlight>React</Highlight>, umożliwiającym klientom elastyczne zarządzanie stronami karier i brandingiem.",
+        "resp2": "Sukcesywna migracja kodu z <Highlight>JavaScript do TypeScript (TSX)</Highlight> oraz systematyczna redukcja długu technologicznego zgodnie z zasadami <Highlight>Clean Code</Highlight>.",
+        "resp3": "Ścisła współpraca z zespołem UX przy tworzeniu <Highlight>biblioteki reużywalnych komponentów</Highlight> oraz zapewnieniu spójności wizualnej i funkcjonalnej aplikacji.",
+        "resp4": "Projektowanie, rozwój i utrzymanie modułów systemu TalentLink wspierającego procesy rekrutacyjne (Full-stack: <Highlight>Java, React</Highlight>).",
+        "resp5": "Utrzymanie i optymalizacja <Highlight>procesów CI/CD</Highlight> w celu zapewnienia stabilności wydań oraz wysokiej jakości kodu."
       },
       "juniorsoftwareengineer": {
-        "resp1": "Dostosowanie publicznych formularzy rekrutacyjnych i widoków kandydata do rygorystycznych, międzynarodowych standardów dostępności cyfrowej (WCAG).",
+        "resp1": "Dostosowanie publicznych formularzy rekrutacyjnych i widoków kandydata do rygorystycznych, międzynarodowych standardów dostępności cyfrowej (<Highlight>WCAG</Highlight>).",
         "resp2": "Rozwój i utrzymanie aplikacji TalentLink w warstwie full-stack ze szczególnym naciskiem na moduły skierowane do kandydatów (candidate-facing).",
         "resp3": "Projektowanie i optymalizacja doświadczeń użytkowników w ścieżce aplikowania w ścisłej współpracy z zespołem produktowym.",
-        "resp4": "Aktywny udział w planowaniu architektonicznym, szacowaniu zadań oraz definiowaniu strategii rozwoju aplikacji w metodyce zwinnej."
+        "resp4": "Aktywny udział w planowaniu architektonicznym, szacowaniu zadań oraz definiowaniu strategii rozwoju aplikacji w <Highlight>metodyce zwinnej</Highlight>."
       },
       "internsoftwaredeveloper": {
         "resp1": "Praktyczne zastosowanie wiedzy akademickiej w komercyjnym tworzeniu oprogramowania.",
-        "resp2": "Wykorzystanie języków Java i React w rozwoju aplikacji oraz codzienne korzystanie z systemu kontroli wersji Git.",
-        "resp3": "Implementacja synchronicznej komunikacji w architekturze REST oraz pisanie testów jednostkowych.",
-        "resp4": "Uczestnictwo w pracy zespołowej zgodnie z metodyką Agile przy użyciu narzędzi z ekosystemu Atlassian.",
+        "resp2": "Wykorzystanie języków <Highlight>Java</Highlight> i <Highlight>React</Highlight> w rozwoju aplikacji oraz codzienne korzystanie z systemu kontroli wersji <Highlight>Git</Highlight>.",
+        "resp3": "Implementacja synchronicznej komunikacji w <Highlight>architekturze REST</Highlight> oraz pisanie <Highlight>testów jednostkowych</Highlight>.",
+        "resp4": "Uczestnictwo w pracy zespołowej zgodnie z <Highlight>metodyką Agile</Highlight> przy użyciu narzędzi z ekosystemu Atlassian.",
         "resp5": "Rozwój zdolności analitycznych i umiejętności rozwiązywania problemów w projektach programistycznych."
       }
     },
     "i2b": {
       "itspecialist": {
-        "resp1": "Zarządzanie środowiskami systemowymi Linux i Windows.",
-        "resp2": "Nadzór nad oprogramowaniem centrum obsługi, w tym systemem Hermes i bazą danych MSSQL.",
+        "resp1": "Zarządzanie środowiskami systemowymi <Highlight>Linux i Windows</Highlight>.",
+        "resp2": "Nadzór nad oprogramowaniem centrum obsługi, w tym systemem Hermes i bazą danych <Highlight>MSSQL</Highlight>.",
         "resp3": "Administracja infrastrukturą sieciową i teleinformatyczną.",
-        "resp4": "Tworzenie i administracja domenami przy użyciu narzędzi takich jak Samba oraz serwer QNAP NAS.",
+        "resp4": "Tworzenie i administracja domenami przy użyciu narzędzi takich jak <Highlight>Samba</Highlight> oraz serwer <Highlight>QNAP NAS</Highlight>.",
         "resp5": "Tworzenie skryptów automatyzujących i dostosowanych do specyficznych potrzeb klientów.",
         "resp6": "Nadzór nad bezpieczeństwem dostępu do zasobów sieciowych i zarządzanie uprawnieniami użytkowników.",
-        "resp7": "Wdrożenie i utrzymanie systemów antywirusowych (ESET).",
-        "resp8": "Konfiguracja, zarządzanie i monitorowanie zapory sieciowej Fortigate.",
-        "resp9": "Wykorzystanie języków PHP i Bash do automatyzacji powtarzalnych zadań operacyjnych.",
+        "resp7": "Wdrożenie i utrzymanie systemów antywirusowych (<Highlight>ESET</Highlight>).",
+        "resp8": "Konfiguracja, zarządzanie i monitorowanie zapory sieciowej <Highlight>Fortigate</Highlight>.",
+        "resp9": "Wykorzystanie języków <Highlight>PHP i Bash</Highlight> do automatyzacji powtarzalnych zadań operacyjnych.",
         "resp10": "Projektowanie narzędzi wewnętrznych usprawniających codzienne procesy operacyjne."
       }
     }
@@ -114,9 +114,9 @@
       "name": "Politechnika Krakowska im. Tadeusza Kościuszki",
       "title": "Inżynier, Informatyka (na wydziale WIEiK)",
       "description": {
-        "paragraph1": "Podczas studiów miałem okazję zgłębiać różnorodne aspekty informatyki, w tym <strong>projektowanie oprogramowania, sieci komputerowe, bazy danych oraz algorytmy</strong>. Uczestniczyłem w licznych projektach zespołowych, co pozwoliło mi rozwijać umiejętności współpracy i rozwiązywania problemów w grupie. Praca w zespole nad różnorodnymi projektami informatycznymi wzbogaciła moje doświadczenie.",
-        "paragraph2": "W ramach mojej pracy dyplomowej przygotowałem aplikację do <strong>zarządzania finansami domowymi</strong>. Projekt uwzględniał implementację interfejsu użytkownika oraz logiki aplikacji, wraz z kompleksową infrastrukturą. Praca dyplomowa została uzupełniona o dokładną dokumentację, która szczegółowo opisuje wszystkie aspekty aplikacji oraz proces jej tworzenia.",
-        "paragraph3": "Dodatkowo, przez cały okres nauki miałem zaszczyt otrzymywać <strong>stypendium rektora dla najlepszych studentów.</strong>"
+        "paragraph1": "Podczas studiów miałem okazję zgłębiać różnorodne aspekty informatyki, w tym <Highlight>projektowanie oprogramowania</Highlight>, <Highlight>sieci komputerowe</Highlight>, <Highlight>bazy danych</Highlight> oraz <Highlight>algorytmy</Highlight>. Uczestniczyłem w licznych projektach zespołowych, co pozwoliło mi rozwijać umiejętności współpracy i rozwiązywania problemów w grupie. Praca w zespole nad różnorodnymi projektami informatycznymi wzbogaciła moje doświadczenie.",
+        "paragraph2": "W ramach mojej pracy dyplomowej przygotowałem aplikację do <Highlight>zarządzania finansami domowymi</Highlight>. Projekt uwzględniał implementację interfejsu użytkownika oraz logiki aplikacji, wraz z kompleksową infrastrukturą. Praca dyplomowa została uzupełniona o dokładną dokumentację, która szczegółowo opisuje wszystkie aspekty aplikacji oraz proces jej tworzenia.",
+        "paragraph3": "Dodatkowo, przez cały okres nauki miałem zaszczyt otrzymywać <Highlight>stypendium rektora dla najlepszych studentów</Highlight>."
       }
     },
     "zse": {
@@ -127,7 +127,7 @@
         "e12": "Montaż i eksploatacja komputerów osobistych oraz urządzeń peryferyjnych,",
         "e13": "Projektowanie lokalnych sieci komputerowych oraz administrowanie sieciami,",
         "e14": "Tworzenie aplikacji internetowych i baz danych oraz administrowanie nimi,",
-        "paragraph2": "Przez cały okres nauki otrzymywałem stypendium w ramach programu <strong>\"Młody Inżynier\"</strong>."
+        "paragraph2": "Przez cały okres nauki otrzymywałem stypendium w ramach programu <Highlight>\"Młody Inżynier\"</Highlight>."
       }
     }
   }

@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import SocialLinks from "./SocialLinks";
-import { useTranslation } from "react-i18next";
-import { JustifiedParagraph } from "../../ParagraphsAndHeaders";
+import { Trans } from "react-i18next";
+import { JustifiedParagraph } from "../../components/ParagraphsAndHeaders";
 import { device } from "../../../const";
+import { AppTranslation } from "../../components/AppTranslation";
 
 const PersonalCardContainer = styled.div`
   margin-top: 50px;
@@ -15,6 +16,7 @@ const PersonalCardContainer = styled.div`
   @media ${device.mobile} {
     flex-direction: column;
   }
+  filter: drop-shadow(0px 0px 100px ${(props) => `${props.theme.accentColor}18`});
 `;
 
 const AvatarContainer = styled.div`
@@ -52,7 +54,6 @@ const FieldJobRole = styled(Field)`
 `;
 
 function PersonalCard() {
-  const { t } = useTranslation();
 
   return (
     <PersonalCardContainer>
@@ -61,9 +62,13 @@ function PersonalCard() {
       </AvatarContainer>
       <FieldsContainer>
         <Field>Tomasz Wąsacz</Field>
-        <FieldJobRole>{t("app.fieldJobRole")}</FieldJobRole>
+        <FieldJobRole>
+          <AppTranslation translationKey={"app.fieldJobRole"} />
+        </FieldJobRole>
         <SocialLinks />
-        <JustifiedParagraph>{t("aboutMe.firstParagraph")}</JustifiedParagraph>
+        <JustifiedParagraph>
+          <AppTranslation translationKey={"aboutMe.firstParagraph"} />
+        </JustifiedParagraph>
       </FieldsContainer>
     </PersonalCardContainer>
   );

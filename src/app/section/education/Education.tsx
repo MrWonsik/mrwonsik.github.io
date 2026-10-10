@@ -1,18 +1,13 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 import EducationCard from "./EducationCard";
-import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { educationData } from "./data";
+import { TimelineConnector } from "../../components/TimelineConnector";
 
 const EducationContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 50px;
-`;
-
-const PiArrowFatLineUpFillStyled = styled(MdKeyboardDoubleArrowUp)`
-  font-size: 100px;
-  align-self: center;
+  gap: 15px;
 `;
 
 function Education() {
@@ -21,7 +16,7 @@ function Education() {
       {educationData.map((education, index) => (
         <Fragment key={education.id}>
           <EducationCard educationInfo={education} />
-          {educationData.length - 1 != index && <PiArrowFatLineUpFillStyled />}
+          {educationData.length - 1 != index && <TimelineConnector />}
         </Fragment>
       ))}
     </EducationContainer>

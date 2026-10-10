@@ -25,8 +25,6 @@ const AppContainer = styled.div`
 
 const NavigationContainer = styled.div`
   max-width: 1500px;
-  position: sticky;
-  top: 0;
   background: ${(props) => props.theme.mainColor};
 `;
 
@@ -46,6 +44,7 @@ function App() {
       displayHeader: false,
       component: <AboutMe />,
       icon: <IoIosPerson />,
+      visibleOnNav: false,
     },
     {
       id: "courses",
@@ -53,6 +52,7 @@ function App() {
       displayHeader: true,
       component: <Courses />,
       icon: <IoBookSharp />,
+      visibleOnNav: true,
     },
     {
       id: "employment-history",
@@ -60,6 +60,7 @@ function App() {
       displayHeader: true,
       component: <EmploymentHistory />,
       icon: <BsBuildingsFill />,
+      visibleOnNav: true,
     },
     {
       id: "education",
@@ -67,6 +68,7 @@ function App() {
       displayHeader: true,
       component: <Education />,
       icon: <GiGraduateCap />,
+      visibleOnNav: true,
     },
     // {
     //   id: "portfolio",

@@ -1,18 +1,13 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 import EmploymentHistoryCard from "./EmploymentHistoryCard";
-import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { employmentHistoryData } from "./data";
+import { TimelineConnector } from "../../components/TimelineConnector";
 
 const EmploymentHistoryContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-`;
-
-const PiArrowFatLineUpFillStyled = styled(MdKeyboardDoubleArrowUp)`
-  font-size: 100px;
-  align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 `;
 
 function EmploymentHistory() {
@@ -21,9 +16,7 @@ function EmploymentHistory() {
       {employmentHistoryData.map((employmentHistory, index) => (
         <Fragment key={employmentHistory.id}>
           <EmploymentHistoryCard employmentHistory={employmentHistory} />
-          {employmentHistoryData.length - 1 != index && (
-            <PiArrowFatLineUpFillStyled />
-          )}
+          {employmentHistoryData.length - 1 != index && (<TimelineConnector />)}
         </Fragment>
       ))}
     </EmploymentHistoryContainer>

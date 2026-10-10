@@ -24,30 +24,30 @@
     "dec": "December"
   },
   "aboutMe": {
-    "firstParagraph": "Professionally coding since 2020. I bridge the gap between a robust backend (Java, Spring) and a modern frontend (React, TypeScript). I care about clean architecture, good design, and solid craftsmanship—no shortcuts or sloppy work."
+    "firstParagraph": "Professionally coding since 2020. I bridge the gap between a robust backend (<Highlight>Java</Highlight>, <Highlight>Spring</Highlight>) and a modern frontend (<Highlight>React</Highlight>, <Highlight>TypeScript</Highlight>). I care about <Highlight>clean architecture</Highlight>, good design, and solid craftsmanship—no shortcuts or sloppy work."
   },
   "skills": {
     "technologiesSubheader": "Learned Technologies",
     "strengths": {
       "webApplicationDeveloper": {
         "header": "Web Application Developer",
-        "description": "I create web applications by combining frontend and backend. I design user interfaces and implement business logic, ensuring interactivity and responsiveness. I have experience with architectures based on both synchronous and asynchronous communication."
+        "description": "I create web applications by combining frontend and backend. I design user interfaces and implement business logic, ensuring interactivity and responsiveness. I have experience with architectures based on both <Highlight>synchronous and asynchronous communication</Highlight>."
       },
       "qualityDrivenDeveloper": {
         "header": "Quality-Driven Developer",
-        "description": "In order to ensure high code quality and reduce the number of emerging errors, I ensure that applications are well-tested using unit and integration tests. Thanks to this approach, the applications I work on are more reliable and easier to maintain."
+        "description": "In order to ensure high code quality and reduce the number of emerging errors, I ensure that applications are well-tested using <Highlight>unit and integration tests</Highlight>. Thanks to this approach, the applications I work on are more reliable and easier to maintain."
       },
       "cleanCodePractitioner": {
         "header": "Clean Code Practitioner",
-        "description": "I write clear and understandable code, adhering to the best programming practices. Throughout my career, I always strive to follow practices such as SOLID, KISS, DRY, YAGNI, as well as many other good practices advocated by Uncle Bob (Bob Martin)"
+        "description": "I write clear and understandable code, adhering to the best programming practices. Throughout my career, I always strive to follow practices such as <Highlight>SOLID, KISS, DRY, YAGNI</Highlight>, as well as many other good practices advocated by Uncle Bob (Bob Martin)."
       },
       "refactoringNinja": {
         "header": "Refactoring Ninja",
-        "description": "I specialize in improving existing code, removing unnecessary elements, and optimizing its structure, ensuring its readability and efficiency. Following the theory of broken windows, I strive to prevent 'broken windows' from occurring."
+        "description": "I specialize in improving existing code, removing unnecessary elements, and optimizing its structure, ensuring its readability and efficiency. Following the theory of broken windows, I strive to prevent <Highlight>'broken windows'</Highlight> from occurring."
       },
       "architectureEnthusiast": {
         "header": "Architecture Enthusiast",
-        "description": "I am passionate about computer system architecture and I aim to delve into the intricacies of software design, creating scalable, efficient, and flexible systems using Domain-Driven Design (DDD) practices."
+        "description": "I am passionate about computer system architecture and I aim to delve into the intricacies of software design, creating scalable, efficient, and flexible systems using <Highlight>Domain-Driven Design (DDD)</Highlight> practices."
       },
       "programingPassion": {
         "header": "Programming devotee",
@@ -67,44 +67,44 @@
     "current": "current",
     "cornerstone": {
       "seniorsoftwareengineer": {
-        "resp1": "Designing, developing, and maintaining web applications with end-to-end ownership of both backend and frontend layers.",
-        "resp2": "Designing and implementing a public RESTful API (HATEOAS) for external integrations, including MCP integration to enable seamless data exchange with AI agents.",
-        "resp3": "Architectural refactoring using the Ports & Adapters pattern, enabling consistent domain logic to be safely and flexibly exposed through both the public API and the UI.",
-        "resp4": "Providing technical leadership and product support by delivering solutions aligned with core business objectives.",
-        "resp5": "Mentoring team members, driving engineering best practices, and maintaining high standards of code quality."
+        "resp1": "Designing, developing, and maintaining web applications with end-to-end ownership of both <Highlight>backend and frontend</Highlight> layers.",
+        "resp2": "Designing and implementing a public <Highlight>RESTful API (HATEOAS)</Highlight> for external integrations, including <Highlight>MCP integration</Highlight> to enable seamless data exchange with AI agents.",
+        "resp3": "Architectural refactoring using the <Highlight>Ports & Adapters</Highlight> pattern, enabling consistent domain logic to be safely and flexibly exposed through both the public API and the UI.",
+        "resp4": "Providing <Highlight>technical leadership</Highlight> and product support by delivering solutions aligned with core business objectives.",
+        "resp5": "Mentoring team members, driving <Highlight>engineering best practices</Highlight>, and maintaining high standards of code quality."
       },
       "softwareengineer": {
-        "resp1": "Key role in replacing a legacy ColdFusion system with a modern React module, empowering clients to build and manage customizable career sites and branding.",
-        "resp2": "Gradual codebase migration from JavaScript to TypeScript (TSX) alongside systematic technical debt reduction following Clean Code principles.",
-        "resp3": "Close collaboration with the UX team to build a reusable component library and ensure visual and functional consistency across the application.",
-        "resp4": "Designing, developing, and maintaining core TalentLink modules supporting recruitment workflows (Full-stack: Java, React).",
-        "resp5": "Maintaining and optimizing CI/CD pipelines to ensure release stability and high software quality."
+        "resp1": "Key role in replacing a legacy <Highlight>ColdFusion</Highlight> system with a modern <Highlight>React</Highlight> module, empowering clients to build and manage customizable career sites and branding.",
+        "resp2": "Gradual codebase migration from <Highlight>JavaScript to TypeScript (TSX)</Highlight> alongside systematic technical debt reduction following <Highlight>Clean Code</Highlight> principles.",
+        "resp3": "Close collaboration with the UX team to build a <Highlight>reusable component library</Highlight> and ensure visual and functional consistency across the application.",
+        "resp4": "Designing, developing, and maintaining core TalentLink modules supporting recruitment workflows (Full-stack: <Highlight>Java, React</Highlight>).",
+        "resp5": "Maintaining and optimizing <Highlight>CI/CD pipelines</Highlight> to ensure release stability and high software quality."
       },
       "juniorsoftwareengineer": {
-        "resp1": "Adapting public application forms and candidate-facing views to meet rigorous international digital accessibility standards (WCAG).",
+        "resp1": "Adapting public application forms and candidate-facing views to meet rigorous international digital accessibility standards (<Highlight>WCAG</Highlight>).",
         "resp2": "Full-stack development and maintenance of the TalentLink application, with a strong focus on candidate-facing modules.",
         "resp3": "Designing and optimizing the candidate application journey in close collaboration with the product team.",
-        "resp4": "Active participation in architectural planning, task estimation, and defining application roadmap strategies within agile workflows."
+        "resp4": "Active participation in architectural planning, task estimation, and defining application roadmap strategies within <Highlight>Agile</Highlight> workflows."
       },
       "internsoftwaredeveloper": {
         "resp1": "Applying academic foundations to practical, commercial software development.",
-        "resp2": "Leveraging Java and React for application development while utilizing Git version control.",
-        "resp3": "Implementing synchronous communication patterns in REST architectures and writing unit tests.",
-        "resp4": "Collaborating in Agile team environments using Atlassian project management tools.",
+        "resp2": "Leveraging <Highlight>Java</Highlight> and <Highlight>React</Highlight> for application development while utilizing <Highlight>Git</Highlight> version control.",
+        "resp3": "Implementing synchronous communication patterns in <Highlight>REST architectures</Highlight> and writing <Highlight>unit tests</Highlight>.",
+        "resp4": "Collaborating in <Highlight>Agile</Highlight> team environments using Atlassian project management tools.",
         "resp5": "Developing analytical thinking and problem-solving skills through hands-on technical projects."
       }
     },
     "i2b": {
       "itspecialist": {
-        "resp1": "Managing Linux and Windows server environments.",
-        "resp2": "Overseeing call center software, including the Hermes system and its MSSQL database.",
+        "resp1": "Managing <Highlight>Linux and Windows</Highlight> server environments.",
+        "resp2": "Overseeing call center software, including the Hermes system and its <Highlight>MSSQL</Highlight> database.",
         "resp3": "Managing network and telecommunication infrastructure.",
-        "resp4": "Creating and administering domains using Samba tools and QNAP NAS servers.",
+        "resp4": "Creating and administering domains using <Highlight>Samba</Highlight> tools and <Highlight>QNAP NAS</Highlight> servers.",
         "resp5": "Developing custom scripts tailored to specific client and operational requirements.",
         "resp6": "Supervising resource access security and managing user privilege groups.",
-        "resp7": "Implementing and maintaining ESET security solutions.",
-        "resp8": "Configuring, managing, and monitoring Fortigate firewalls.",
-        "resp9": "Utilizing PHP and Bash scripting to automate repetitive operational tasks.",
+        "resp7": "Implementing and maintaining <Highlight>ESET</Highlight> security solutions.",
+        "resp8": "Configuring, managing, and monitoring <Highlight>Fortigate firewalls</Highlight>.",
+        "resp9": "Utilizing <Highlight>PHP and Bash</Highlight> scripting to automate repetitive operational tasks.",
         "resp10": "Building internal tools to streamline daily workflow processes."
       }
     }
@@ -114,9 +114,9 @@
       "name": "Cracow University of Technology",
       "title": "Bachelor of Engineering, Computer Science",
       "description": {
-        "paragraph1": "During my studies, I had the opportunity to delve into various aspects of computer science, including <strong>software design, computer networks, databases, and algorithms</strong>. I participated in numerous team projects, which allowed me to develop collaboration skills and problem-solving abilities within a group. Working in a team on various IT projects enriched my experience.",
-        "paragraph2": "As part of my diploma thesis, I developed an application for <strong>managing household finances</strong>. The project included the implementation of the user interface and application logic, along with comprehensive infrastructure. The diploma thesis was supplemented with detailed documentation, which thoroughly describes all aspects of the application and its creation process.",
-        "paragraph3": "Additionally, throughout my academic journey, I had the honor of receiving the <strong>rector's scholarship for top students</strong>."
+        "paragraph1": "During my studies, I had the opportunity to delve into various aspects of computer science, including <Highlight>software design</Highlight>, <Highlight>computer networks</Highlight>, <Highlight>databases</Highlight>, and <Highlight>algorithms</Highlight>. I participated in numerous team projects, which allowed me to develop collaboration skills and problem-solving abilities within a group. Working in a team on various IT projects enriched my experience.",
+        "paragraph2": "As part of my diploma thesis, I developed an application for <Highlight>managing household finances</Highlight>. The project included the implementation of the user interface and application logic, along with comprehensive infrastructure. The diploma thesis was supplemented with detailed documentation, which thoroughly describes all aspects of the application and its creation process.",
+        "paragraph3": "Additionally, throughout my academic journey, I had the honor of receiving the <Highlight>rector's scholarship for top students</Highlight>."
       }
     },
     "zse": {
@@ -127,7 +127,7 @@
         "e12": "Assembly and operation of personal computers and peripheral devices,",
         "e13": "Designing local computer networks and network administration,",
         "e14": "Creating web applications and databases and administering them,",
-        "paragraph2": "Throughout my studies, I received a scholarship under the <strong>'Young Engineer'</strong> program."
+        "paragraph2": "Throughout my studies, I received a scholarship under the <Highlight>'Young Engineer'</Highlight> program."
       }
     }
   }

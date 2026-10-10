@@ -1,11 +1,12 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-import { ThirdHeader } from "../../ParagraphsAndHeaders";
+import { Trans } from "react-i18next";
+import { ThirdHeader } from "../../components/ParagraphsAndHeaders";
 import Strengths from "./Strengths";
 import styled from "styled-components";
 import { Svg, SvgContainer } from "./SvgContainer";
-import QuoteBox from "../../QuoteBox";
+import QuoteBox from "./QuoteBox";
 import PersonalCard from "./PersonalCard";
+import { AppTranslation } from "../../components/AppTranslation";
 
 const SubsectionContainer = styled.div`
   margin: 80px 0;
@@ -54,7 +55,6 @@ const Tools = () => (
 );
 
 function AboutMe() {
-  const { t } = useTranslation();
 
   return (
     <div>
@@ -68,7 +68,9 @@ function AboutMe() {
         sentence={"It is not enough for code to work."}
       />
       <SubsectionContainer>
-        <ThirdHeader>{t("skills.technologiesSubheader")}</ThirdHeader>
+        <ThirdHeader>
+          <AppTranslation translationKey={"skills.technologiesSubheader"} />
+        </ThirdHeader>
         <div>
           <BackendTechnologies />
           <FrontendTechnologies />

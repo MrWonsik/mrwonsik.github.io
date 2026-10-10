@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { SecondaryHeader } from "../ParagraphsAndHeaders";
+import { SecondaryHeader } from "../components/ParagraphsAndHeaders";
 
 interface SectionProps {
   id: string;

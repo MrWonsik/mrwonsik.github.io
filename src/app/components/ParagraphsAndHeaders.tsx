@@ -6,7 +6,8 @@ export const JustifiedParagraph = styled.p`
 
 export const BoldedParagraph = styled.p`
   font-weight: bold;
-  font-size: 30px;
+  font-size: 25px;
+  color: ${(props) => props.theme.accentColor};
 `;
 
 export const ItalicParagraph = styled.p`
@@ -19,6 +20,7 @@ export const SecondaryHeader = styled.h2`
   margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
+  color: ${(props) => props.theme.accentColor};
 `;
 
 export const ThirdHeader = styled.h3`
@@ -26,4 +28,5 @@ export const ThirdHeader = styled.h3`
   margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
+  color: ${(props) => props.theme.accentColor};
 `;
