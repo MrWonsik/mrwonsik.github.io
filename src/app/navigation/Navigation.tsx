@@ -9,22 +9,32 @@ const NavigationContainer = styled.nav`
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-    background: ${(props) => props.theme.mainColor};
+    @media ${device.mobile} {
+        padding: 0;
+        justify-content: space-around;
+    }
 `;
 
 const LinksContainer = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex: 1;
+    gap: 30px;
+    
+    @media ${device.mobile} {
+        padding: 10px;
+        justify-content: space-around;
+    }
 `;
 
 const NavigationLinkContainer = styled.div`
     padding: 20px;
+
+    @media ${device.mobile} {
+        padding: 0;
+    }
 `;
 
 const NavigationLink = styled.a`
@@ -64,12 +74,6 @@ const NavigationLabel = styled.span`
   }
 `;
 
-const ControlsContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 16px;
-`;
-
 interface NavigationCardProps {
   sectionsList: Array<SectionDefinition>;
 }
@@ -88,12 +92,10 @@ function Navigation(props: NavigationCardProps) {
               </NavigationLink>
             </NavigationLinkContainer>
           ))}
-      </LinksContainer>
-
-      <ControlsContainer>
         <ThemeSelector />
         <LanguageSelector />
-      </ControlsContainer>
+      </LinksContainer>
+
     </NavigationContainer>
   );
 }

@@ -5,6 +5,7 @@ export const data: Array<CourseInfo> = [
     id: "ANF",
     course: {
       logoSrc: "/assets/courses/anf.webp",
+      logoWhiteSrc: "/assets/courses/anf-white.png",
       url: "https://architekturanafroncie.pl",
       name: "Architektura Na Froncie"
     },
@@ -18,7 +19,8 @@ export const data: Array<CourseInfo> = [
   {
     id: "DD",
     course: {
-      logoSrc: "/assets/courses/dd.png",
+      logoSrc: "/assets/courses/dd.svg",
+      logoWhite: true,
       url: "https://domaindrivers.pl",
       name: "Domain Drivers"
     },
@@ -37,6 +39,7 @@ export const data: Array<CourseInfo> = [
     id: "DNA",
     course: {
       logoSrc: "/assets/courses/dna.png",
+      logoWhiteSrc: "/assets/courses/dna-white.svg",
       url: "https://droganowoczesnegoarchitekta.pl",
       name: "Droga Nowoczesnego Architekta"
     },
@@ -129,7 +132,7 @@ export const data: Array<CourseInfo> = [
       name: "Shaun Wassell",
     },
     platform: {
-      logoSrc: "/assets/courses/linkedinlearning.png",
+      logoSrc: "/assets/courses/linkedinlearning2.png",
     },
     completionDate:{
       month: "month.feb",
@@ -163,7 +166,7 @@ export const data: Array<CourseInfo> = [
       name: "Eve Porcello",
     },
     platform: {
-      logoSrc: "/assets/courses/linkedinlearning.png",
+      logoSrc: "/assets/courses/linkedinlearning2.png",
     },
     completionDate: {
       month: "month.feb",

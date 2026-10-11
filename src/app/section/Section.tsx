@@ -8,17 +8,23 @@ interface SectionProps {
   header: string;
   component: JSX.Element;
   mobileIcon: JSX.Element;
+  isLast: boolean;
 }
 
-const SectionContainer = styled.section`
+interface SectionContainerProps {
+  $isLast: boolean;
+}
+
+const SectionContainer = styled.section<SectionContainerProps>`
   padding: 20px;
   margin: 10px;
-  justify-content: center;
+  margin-bottom: ${({ $isLast }) => ($isLast ? "160px" : "0")};
 `;
 
 function Section(props: SectionProps) {
+  console.log(props.isLast);
   return (
-    <SectionContainer id={props.id} className={"sectionContainer"}>
+    <SectionContainer id={props.id} className={"sectionContainer"} $isLast={props.isLast}>
       {props.displayHeader && <SecondaryHeader>{props.header}</SecondaryHeader>}
       {props.component}
     </SectionContainer>

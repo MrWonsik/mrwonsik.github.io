@@ -1,25 +1,32 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useRef, useState } from "react";
 import { BiSolidCalendar } from "react-icons/bi";
 import styled from "styled-components";
 import { device } from "../../const";
 
-const CardContainer = styled.div`
+interface CardContainerProps {
+  $isActive: boolean;
+}
+
+const CardContainer = styled.div<CardContainerProps>`
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 28px;
     padding: 28px;
-    border-radius: 14px;
+    border-radius: 16px;
     background-color: ${(props) => props.theme.mainColor};
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    transition: border-color 0.25s ease, transform 0.25s ease;
 
-    &:hover {
-        border-color: ${(props) => props.theme.accentColor};
-        transform: translateY(-2px);
-    }
+    border: 1px solid ${(props) => props.$isActive ? props.theme.accentColor : "rgba(255, 255, 255, 0.08)"};
+    box-shadow: ${(props) => props.$isActive
+            ? `0 10px 30px -5px ${props.theme.accentColor}33, 0 0 20px 2px${props.theme.accentColor}22, 0 4px 12px rgba(0, 0, 0, 0.25)`
+            : "0 4px 12px rgba(0, 0, 0, 0.25)"};
+
+    overflow: hidden;
+
+    transform: ${(props) => props.$isActive ? "translateY(-4px) scale(1.01)" : "translateY(0) scale(1)"};
+    transition: border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
     @media ${device.tablet} {
         flex-direction: column;
@@ -32,7 +39,7 @@ const BasicInfo = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 250px;
+    width: 400px;
     flex-shrink: 0;
 
     @media ${device.tablet} {
@@ -52,7 +59,7 @@ const CompanyLogoContainer = styled.div`
         max-width: 150px;
         max-height: 100%;
         object-fit: contain;
-        filter: drop-shadow(0px 0px 50px ${(props) => `${props.theme.accentColor}60`});
+        filter: ${(props) => props.theme.showFilterDropShadow ? `drop-shadow(0px 0px 50px ${props.theme.accentColor}60)` : "none"};
     }
 `;
 
@@ -67,7 +74,7 @@ const PeriodContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 8px;
-    font-size: 18px;
+    font-size: 22px;
     color: ${(props) => props.theme.textColor};
     opacity: 0.85;
     background: rgba(255, 255, 255, 0.05);
@@ -77,7 +84,7 @@ const PeriodContainer = styled.div`
 
     svg {
         color: ${(props) => props.theme.accentColor};
-        font-size: 1.1rem;
+        font-size: 30px;
     }
 `;
 
@@ -143,8 +150,35 @@ function HorizontalCard({
                           period,
                           detailComponent,
                         }: HorizontalCardProps) {
+  const [isFocused, setIsFocused] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsFocused(entry.isIntersecting);
+      },
+      {
+        rootMargin: "-40% 0px -40% 0px",
+        threshold: 0,
+      }
+    );
+
+    const currentCard = cardRef.current;
+    if (currentCard) {
+      observer.observe(currentCard);
+    }
+
+    return () => {
+      if (currentCard) {
+        observer.unobserve(currentCard);
+      }
+      observer.disconnect();
+    };
+  }, []);
+
   return (
-    <CardContainer>
+    <CardContainer ref={cardRef} $isActive={isFocused}>
       <BasicInfo>
         <CompanyLogoContainer>
           <img src={logo.src} alt={logo.alt} />

@@ -15,9 +15,7 @@ export const TimelineConnector = styled.div`
     );
     opacity: 0.9;
 
-    filter: drop-shadow(
-            0px 0px 6px ${(props) => `${props.theme.accentColor}cc`}
-    );
+    filter: ${(props) => props.theme.showFilterDropShadow ? `drop-shadow(0px 0px 6px ${props.theme.accentColor}cc)` : "none"};
 
     &::after {
         content: "";

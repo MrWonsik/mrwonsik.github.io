@@ -3,6 +3,8 @@ export interface CourseInfo {
   course: {
     name?: string;
     logoSrc?: string;
+    logoWhiteSrc?: string;
+    logoWhite?: boolean;
     url?: string;
   };
   author?: {
@@ -13,7 +15,7 @@ export interface CourseInfo {
     name?: string;
     logoSrc?: string;
   };
-  completionDate: {
+  completionDate?: {
     month: string,
     year: string,
   }

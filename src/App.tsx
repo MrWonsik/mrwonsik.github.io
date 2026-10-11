@@ -86,7 +86,7 @@ function App() {
           <Navigation sectionsList={sections} />
         </NavigationContainer>
         <MainContainerContainer>
-          {sections.map((section) => (
+          {sections.map((section, index) => (
             <Section
               key={section.id}
               id={section.id}
@@ -94,6 +94,7 @@ function App() {
               header={section.header}
               component={section.component}
               mobileIcon={section.icon}
+              isLast={index === sections.length - 1}
             />
           ))}
         </MainContainerContainer>

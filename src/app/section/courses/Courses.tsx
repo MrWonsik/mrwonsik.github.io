@@ -4,11 +4,10 @@ import CourseCard from "./CourseCard";
 import { data } from "./data";
 
 const CoursesContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 28px;
-    justify-content: center;
-    align-items: stretch;
+    width: 100%;
     padding: 20px 0;
 `;
 

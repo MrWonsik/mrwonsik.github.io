@@ -13,10 +13,11 @@ const PersonalCardContainer = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+
+  filter: ${(props) => props.theme.showFilterDropShadow ? `drop-shadow(0px 0px 100px ${props.theme.accentColor}18)` : "none"};
   @media ${device.mobile} {
     flex-direction: column;
   }
-  filter: drop-shadow(0px 0px 100px ${(props) => `${props.theme.accentColor}18`});
 `;
 
 const AvatarContainer = styled.div`
