@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { SecondaryHeader } from "../components/ParagraphsAndHeaders";
+import { device } from "../../const";
 
 interface SectionProps {
   id: string;
@@ -17,8 +18,11 @@ interface SectionContainerProps {
 
 const SectionContainer = styled.section<SectionContainerProps>`
   padding: 20px;
-  margin: 10px;
-  margin-bottom: ${({ $isLast }) => ($isLast ? "160px" : "0")};
+  margin: 10px 10px ${({ $isLast }) => ($isLast ? "160px" : "10px")};
+
+  @media ${device.mobile} {
+    margin-bottom: 10px;
+  }
 `;
 
 function Section(props: SectionProps) {
