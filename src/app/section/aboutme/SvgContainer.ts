@@ -55,10 +55,7 @@ export const TechOrbitItem = styled.div<{
     translate(-50%, -50%);
   display: grid;
   place-items: center;
-  filter: ${(props) =>
-            props.theme.showFilterDropShadow
-              ? `drop-shadow(0px 0px 120px ${props.theme.accentColor})`
-              : "none"};
+  filter: ${(props) => `drop-shadow(0px 0px 120px ${props.theme.accentColor})` };
 
   img {
       width: 100%;
