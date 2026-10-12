@@ -114,7 +114,7 @@ Error generating stack: `+o.message+`
     translate(-50%, -50%);
   display: grid;
   place-items: center;
-  filter: ${e=>e.theme.showFilterDropShadow?`drop-shadow(0px 0px 120px ${e.theme.accentColor})`:"none"};
+  filter: ${e=>`drop-shadow(0px 0px 120px ${e.theme.accentColor})`};
 
   img {
       width: 100%;
