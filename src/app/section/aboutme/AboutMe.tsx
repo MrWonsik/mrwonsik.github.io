@@ -1,9 +1,8 @@
 import React from "react";
-import { Trans } from "react-i18next";
 import { ThirdHeader } from "../../components/ParagraphsAndHeaders";
 import Strengths from "./Strengths";
 import styled from "styled-components";
-import { Svg, SvgContainer } from "./SvgContainer";
+import { TechOrbit, TechOrbitItem } from "./SvgContainer";
 import QuoteBox from "./QuoteBox";
 import PersonalCard from "./PersonalCard";
 import { AppTranslation } from "../../components/AppTranslation";
@@ -12,50 +11,45 @@ const SubsectionContainer = styled.div`
   margin: 80px 0;
 `;
 
-const BackendTechnologies = () => {
-  return (
-    <SvgContainer>
-      <Svg src="/assets/tech-svg/java.svg" />
-      <Svg src="/assets/tech-svg/spring.svg" />
-      <Svg src="/assets/tech-svg/JUnit5.png" />
-      <Svg src="/assets/tech-svg/mockito.png" />
-    </SvgContainer>
-  );
-};
+const technologies = [
+  { src: "/assets/tech-svg/java.svg", angle: 320, distance: 110 },
+  { src: "/assets/tech-svg/spring.svg", angle: 50, distance: 50 },
+  { src: "/assets/tech-svg/react.svg", angle: 230, distance: 110 },
+  { src: "/assets/tech-svg/ts.svg", angle: 123, distance: 160 },
 
-const DatabaseTechnologies = () => {
-  return (
-    <SvgContainer>
-      <Svg src="/assets/tech-svg/mysql.svg" />
-      <Svg src="/assets/tech-svg/postgresql.svg" />
-      <Svg src="/assets/tech-svg/oracle.svg" />
-      <Svg src="/assets/tech-svg/mongodb.svg" />
-      <Svg src="/assets/tech-svg/elasticsearch.svg" />
-    </SvgContainer>
-  );
-};
+  { src: "/assets/tech-svg/html.svg", angle: 0, distance: 250 },
+  { src: "/assets/tech-svg/css.svg", angle: 40, distance: 250 },
+  { src: "/assets/tech-svg/js.svg", angle: 80, distance: 250 },
+  { src: "/assets/tech-svg/mysql.svg", angle: 110, distance: 300 },
+  { src: "/assets/tech-svg/postgresql.svg", angle: 170, distance: 230 },
+  { src: "/assets/tech-svg/oracle.svg", angle: 223, distance: 243 },
+  { src: "/assets/tech-svg/mongodb.svg", angle: 277, distance: 260 },
+  { src: "/assets/tech-svg/JUnit5.png", angle: 313, distance: 245 },
 
-const FrontendTechnologies = () => (
-  <SvgContainer>
-    <Svg src="/assets/tech-svg/html.svg" />
-    <Svg src="/assets/tech-svg/css.svg" />
-    <Svg src="/assets/tech-svg/js.svg" />
-    <Svg src="/assets/tech-svg/ts.svg" />
-    <Svg src="/assets/tech-svg/react.svg" />
-  </SvgContainer>
-);
+  { src: "/assets/tech-svg/elasticsearch.svg", angle: 0, distance: 460 },
+  { src: "/assets/tech-svg/mockito.png", angle: 155, distance: 370 },
+  { src: "/assets/tech-svg/git.svg", angle: 240, distance: 370 },
+  { src: "/assets/tech-svg/jira.svg", angle: 290, distance: 370 },
+  { src: "/assets/tech-svg/jenkins.svg", angle: 193, distance: 370 },
+  { src: "/assets/tech-svg/docker.svg", angle: 45, distance: 370 },
+] as const;
 
-const Tools = () => (
-  <SvgContainer>
-    <Svg src="/assets/tech-svg/git.svg" />
-    <Svg src="/assets/tech-svg/jira.svg" />
-    <Svg src="/assets/tech-svg/jenkins.svg" />
-    <Svg src="/assets/tech-svg/docker.svg" />
-  </SvgContainer>
+const TechnologiesOrbit = () => (
+  <TechOrbit>
+
+    {technologies.map((technology) => (
+      <TechOrbitItem
+        key={technology.src}
+        $angle={technology.angle}
+        $distance={technology.distance}
+      >
+        <img src={technology.src} />
+      </TechOrbitItem>
+    ))}
+  </TechOrbit>
 );
 
 function AboutMe() {
-
   return (
     <div>
       <PersonalCard />
@@ -71,12 +65,7 @@ function AboutMe() {
         <ThirdHeader>
           <AppTranslation translationKey={"skills.technologiesSubheader"} />
         </ThirdHeader>
-        <div>
-          <BackendTechnologies />
-          <FrontendTechnologies />
-          <DatabaseTechnologies />
-          <Tools />
-        </div>
+        <TechnologiesOrbit />
       </SubsectionContainer>
     </div>
   );
